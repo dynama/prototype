@@ -51,7 +51,7 @@ def initialize_database():
         "  `sqlID` int(11) NOT NULL AUTO_INCREMENT,"
         "  `domain` TEXT NOT NULL,"
         "  `ip` TEXT NOT NULL,"
-        "  `src` int(2) NOT NULL,"
+        "  `src` TEXT NOT NULL,"
         "  `level` TEXT NOT NULL,"
         "  PRIMARY KEY (`sqlID`)"
         ") ENGINE=InnoDB")

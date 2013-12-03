@@ -3,7 +3,7 @@ from dump_to_sql import dumper
 from mySQL import truncate_table, get_cnx, get_data, update_mal_hosts
 from dnsBasedAnalysis import num_DNS_IP
 from nameBasedAnalysis import percentDomainNum
-from frequencyBasedAnalysis import cross_reference_src_frequency, sources_by_destination
+from frequencyBasedAnalysis_patched import analyzeTraffic
 import threading, Queue
 
 class main_analysis(threading.Thread):
@@ -50,11 +50,11 @@ class main_analysis(threading.Thread):
 			analysisModulesRun += 1
 			self.commiunicationQueue.put('Done.')
 			self.commiunicationQueue.put('Checking for suspicious hosts...')
-			cross_reference_src_frequency(currentDNSTable)
+			analyzeTraffic(currentDNSTable)
 			analysisModulesRun += 1
 			self.commiunicationQueue.put('Done.')
 			self.commiunicationQueue.put('Checking for hosts browsing suspicious domains...')
-			sources_by_destination(currentDNSTable)
+#			sources_by_destination(currentDNSTable)
 			analysisModulesRun += 1
 			self.commiunicationQueue.put('Done.')
 			self.commiunicationQueue.put('Doing the meta analysis...')

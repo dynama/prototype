@@ -26,7 +26,7 @@ def networkAdd():
     network_address = str("10.20.30.40")
     return network_address
 
-def tVars():
+def tVars()
     ta = .5
     tb = .7
     tc = .9
