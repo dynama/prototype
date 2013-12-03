@@ -1,0 +1,2128 @@
+2013-03-17 00:04:08.054426,74.92.139.68,74.92.185.4,X,u,q,NA
+? peaking.webb.bin A
+<SEP>
+2013-03-17 00:04:08.054574,74.92.185.4,92.73.134.6,X,u,r,AA
+? glum.webb.bin A
+! glum.webb.bin A 74.92.185.4
+! glum.webb.bin A 74.92.185.33
+<SEP>
+2013-03-17 00:04:08.054579,74.92.185.4,92.73.134.6,X,u,r,AA
+? glum.webb.bin A
+! glum.webb.bin A 74.92.185.4
+! glum.webb.bin A 74.92.185.33
+<SEP>
+2013-03-17 00:04:08.054580,74.92.185.4,92.73.134.6,X,u,r,AA
+? glum.webb.bin AAAA
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:04:08.054581,74.92.185.4,92.73.134.6,X,u,r,AA
+? glum.webb.bin AAAA
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:04:08.054626,74.92.185.4,74.92.139.68,X,u,r,AA
+? peaking.webb.bin A
+! peaking.webb.bin CNAME peaking.croce.webb.bin
+! peaking.croce.webb.bin A 74.92.4.171
+<SEP>
+2013-03-17 00:04:08.055163,252.90.88.1,58.208.125.6,X,u,r,NA
+? step.comply.co.rd A
+! step.comply.co.rd CNAME derange.cur.noe.rd
+! derange.cur.noe.rd CNAME step.cur.co.rd.twizzlers.noe
+! step.cur.co.rd.twizzlers.noe CNAME jaded.g.spited.noe
+! jaded.g.spited.noe A 59.104.246.105
+! jaded.g.spited.noe A 59.104.246.114
+<SEP>
+2013-03-17 00:04:08.065131,74.92.222.68,74.92.185.4,X,u,q,NA
+? swell.webb.bin A
+<SEP>
+2013-03-17 00:04:08.065524,74.92.185.4,74.92.222.68,X,u,r,AA
+? swell.webb.bin A
+! swell.webb.bin A 74.92.164.105
+<SEP>
+2013-03-17 00:04:08.068541,74.92.4.171,74.92.185.4,X,u,q,NA
+? hank.webb.bin AAAA
+<SEP>
+2013-03-17 00:04:08.068545,74.92.4.171,74.92.185.4,X,u,q,NA
+? hank.webb.bin AAAA
+<SEP>
+2013-03-17 00:04:08.068900,74.92.185.4,74.92.4.171,X,u,r,AA
+? hank.webb.bin AAAA
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:04:08.068905,74.92.185.4,74.92.4.171,X,u,r,AA
+? hank.webb.bin AAAA
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:04:08.069189,74.92.4.171,74.92.185.4,X,u,q,NA
+? hank.ana.webb.bin AAAA
+<SEP>
+2013-03-17 00:04:08.069193,74.92.4.171,74.92.185.4,X,u,q,NA
+? hank.ana.webb.bin AAAA
+<SEP>
+2013-03-17 00:04:08.069751,74.92.185.4,74.92.4.171,X,u,r,AA
+? hank.ana.webb.bin AAAA
+$ ana.webb.bin SOA redacted
+<SEP>
+2013-03-17 00:04:08.069755,74.92.185.4,74.92.4.171,X,u,r,AA
+? hank.ana.webb.bin AAAA
+$ ana.webb.bin SOA redacted
+<SEP>
+2013-03-17 00:04:08.070245,74.92.4.171,74.92.185.4,X,u,q,NA
+? cisco.webb.bin AAAA
+<SEP>
+2013-03-17 00:04:08.070250,74.92.4.171,74.92.185.4,X,u,q,NA
+? cisco.webb.bin AAAA
+<SEP>
+2013-03-17 00:04:08.070880,74.92.185.4,74.92.4.171,X,u,r,AA
+? cisco.webb.bin AAAA
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:04:08.070885,74.92.185.4,74.92.4.171,X,u,r,AA
+? cisco.webb.bin AAAA
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:04:08.071157,74.92.4.171,74.92.185.4,X,u,q,NA
+? cisco.ana.webb.bin AAAA
+<SEP>
+2013-03-17 00:04:08.071162,74.92.4.171,74.92.185.4,X,u,q,NA
+? cisco.ana.webb.bin AAAA
+<SEP>
+2013-03-17 00:04:08.071458,74.92.185.4,74.92.4.171,X,u,r,AA
+? cisco.ana.webb.bin AAAA
+$ ana.webb.bin SOA redacted
+<SEP>
+2013-03-17 00:04:08.071462,74.92.185.4,74.92.4.171,X,u,r,AA
+? cisco.ana.webb.bin AAAA
+$ ana.webb.bin SOA redacted
+<SEP>
+2013-03-17 00:04:08.077566,74.92.169.142,74.92.185.4,X,u,q,NA
+? compartmentalizes.webb.bin TEXT
+<SEP>
+2013-03-17 00:04:08.078181,74.92.185.4,74.92.169.142,X,u,r,AA
+? compartmentalizes.webb.bin TEXT
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:04:08.078787,74.92.169.142,74.92.185.4,X,u,q,NA
+? compartmentalizes TEXT
+<SEP>
+2013-03-17 00:04:08.078985,74.92.185.4,74.92.169.142,X,u,r,NA
+? compartmentalizes TEXT
+$  SOA redacted
+<SEP>
+2013-03-17 00:04:08.083760,74.92.243.74,74.92.185.4,X,u,q,NA
+? a13srgv3-cpqa.webb.bin A
+<SEP>
+2013-03-17 00:04:08.084209,74.92.185.4,74.92.243.74,X,u,r,AA
+? a13srgv3-cpqa.webb.bin A
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:04:08.084645,74.92.243.74,74.92.185.4,X,u,q,NA
+? a13srgv3-cpqa A
+<SEP>
+2013-03-17 00:04:08.084995,74.92.185.4,74.92.243.74,X,u,r,NA
+? a13srgv3-cpqa A
+$  SOA redacted
+<SEP>
+2013-03-17 00:04:08.084999,74.92.198.112,74.92.185.4,X,u,q,NA
+? ideograms.webb.bin A
+<SEP>
+2013-03-17 00:04:08.085326,74.92.185.4,74.92.198.112,X,u,r,AA
+? ideograms.webb.bin A
+! ideograms.webb.bin A 74.92.198.112
+<SEP>
+2013-03-17 00:04:08.087793,74.92.198.112,74.92.185.4,X,u,q,NA
+? ideograms.webb.bin A
+<SEP>
+2013-03-17 00:04:08.087984,74.92.185.4,74.92.198.112,X,u,r,AA
+? ideograms.webb.bin A
+! ideograms.webb.bin A 74.92.198.112
+<SEP>
+2013-03-17 00:04:08.088114,74.92.222.68,74.92.185.4,X,u,q,NA
+? swell.webb.bin A
+<SEP>
+2013-03-17 00:04:08.088255,74.92.185.4,74.92.222.68,X,u,r,AA
+? swell.webb.bin A
+! swell.webb.bin A 74.92.164.105
+<SEP>
+2013-03-17 00:04:08.091385,252.90.88.1,58.208.125.6,X,u,r,NA
+? quadruplicated.porringers.noe A
+! quadruplicated.porringers.noe A 175.62.74.226
+! quadruplicated.porringers.noe A 175.62.74.238
+! quadruplicated.porringers.noe A 175.62.74.9
+! quadruplicated.porringers.noe A 175.62.74.58
+! quadruplicated.porringers.noe A 175.62.74.94
+! quadruplicated.porringers.noe A 175.62.74.102
+! quadruplicated.porringers.noe A 175.62.74.182
+! quadruplicated.porringers.noe A 175.62.74.194
+<SEP>
+2013-03-17 00:04:08.101290,74.92.243.74,74.92.185.4,X,u,q,NA
+? a13srgv3-cpqa.webb.bin A
+<SEP>
+2013-03-17 00:04:08.101462,252.90.88.1,58.208.125.6,X,u,r,NA
+? g.vanishing.wad A
+! g.vanishing.wad CNAME g.tad.wad
+! g.tad.wad CNAME g.tad.wad.rajas.noe
+! g.tad.wad.rajas.noe A 168.113.213.55
+<SEP>
+2013-03-17 00:04:08.101720,74.92.185.4,74.92.243.74,X,u,r,AA
+? a13srgv3-cpqa.webb.bin A
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:04:08.102299,74.92.243.74,74.92.185.4,X,u,q,NA
+? a13srgv3-cpqa A
+<SEP>
+2013-03-17 00:04:08.102591,74.92.185.4,74.92.243.74,X,u,r,NA
+? a13srgv3-cpqa A
+$  SOA redacted
+<SEP>
+2013-03-17 00:04:08.105242,74.92.117.247,74.92.185.4,X,u,q,NA
+? tired.vets.mug.unions.pis.webb.bin SRV
+<SEP>
+2013-03-17 00:04:08.105603,74.92.185.4,74.92.117.247,X,u,r,AA
+? tired.vets.mug.unions.pis.webb.bin SRV
+! tired.vets.mug.unions.pis.webb.bin SRV redacted
+<SEP>
+2013-03-17 00:04:08.108919,74.92.117.247,74.92.185.4,X,u,q,NA
+? zebu.pis.webb.bin A
+<SEP>
+2013-03-17 00:04:08.109324,74.92.185.4,74.92.117.247,X,u,r,AA
+? zebu.pis.webb.bin A
+! zebu.pis.webb.bin A 74.92.185.65
+<SEP>
+2013-03-17 00:04:08.124917,58.208.125.7,252.90.88.1,X,u,q,NA
+? weaved.repackage.wad A
+<SEP>
+2013-03-17 00:04:08.125706,252.90.88.1,58.208.125.7,X,u,r,NA
+? weaved.repackage.wad A
+! weaved.repackage.wad CNAME weaved.repackage.wad.twizzlers.noe
+! weaved.repackage.wad.twizzlers.noe CNAME rearm.ne.spited.noe
+! rearm.ne.spited.noe A 168.98.94.19
+! rearm.ne.spited.noe A 168.98.94.24
+<SEP>
+2013-03-17 00:04:08.125943,252.90.88.59,74.92.185.33,X,u,r,NA
+? rb.misrepresentations.wad.friend.noe A
+! rb.misrepresentations.wad.friend.noe A 139.7.114.187
+! rb.misrepresentations.wad.friend.noe A 139.7.114.196
+! rb.misrepresentations.wad.friend.noe A 139.7.114.216
+! rb.misrepresentations.wad.friend.noe A 139.7.114.223
+! rb.misrepresentations.wad.friend.noe A 139.7.114.227
+! rb.misrepresentations.wad.friend.noe A 139.7.80.40
+! rb.misrepresentations.wad.friend.noe A 139.7.80.47
+! rb.misrepresentations.wad.friend.noe A 139.7.114.178
+$ friend.noe NS confess.friend.noe
+$ friend.noe NS braises.friend.noe
+$ friend.noe NS misdone.friend.val
+$ friend.noe NS impulse.friend.noe
+$ friend.noe NS sucking.friend.val
+$ friend.noe NS nitwits.friend.noe
+$ friend.noe NS pilling.friend.val
+$ friend.noe NS roentgen.friend.noe
+$ friend.noe NS fracases.friend.val
+$ friend.noe NS converse.friend.val
++ confess.friend.noe A 185.213.146.129
++ braises.friend.noe A 43.30.254.129
++ misdone.friend.val A 43.30.254.131
++ impulse.friend.noe A 59.26.182.129
++ sucking.friend.val A 59.26.182.131
++ nitwits.friend.noe A 103.219.138.129
++ pilling.friend.val A 103.219.138.131
++ roentgen.friend.noe A 223.120.193.128
++ fracases.friend.val A 130.185.124.133
++ converse.friend.val A 62.239.38.131
++  OPTS redacted
+<SEP>
+2013-03-17 00:04:08.126544,74.92.185.33,74.92.207.34,X,u,r,NA
+? rb.misrepresentations.wad.friend.noe A
+! rb.misrepresentations.wad.friend.noe A 139.7.80.40
+! rb.misrepresentations.wad.friend.noe A 139.7.80.47
+! rb.misrepresentations.wad.friend.noe A 139.7.114.178
+! rb.misrepresentations.wad.friend.noe A 139.7.114.187
+! rb.misrepresentations.wad.friend.noe A 139.7.114.196
+! rb.misrepresentations.wad.friend.noe A 139.7.114.216
+! rb.misrepresentations.wad.friend.noe A 139.7.114.223
+! rb.misrepresentations.wad.friend.noe A 139.7.114.227
+<SEP>
+2013-03-17 00:04:08.134994,74.92.243.74,74.92.185.4,X,u,q,NA
+? a13srgv3-cpqa.webb.bin A
+<SEP>
+2013-03-17 00:04:08.135461,74.92.185.4,74.92.243.74,X,u,r,AA
+? a13srgv3-cpqa.webb.bin A
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:04:08.136067,74.92.243.74,74.92.185.4,X,u,q,NA
+? a13srgv3-cpqa A
+<SEP>
+2013-03-17 00:04:08.136318,74.92.185.4,74.92.243.74,X,u,r,NA
+? a13srgv3-cpqa A
+$  SOA redacted
+<SEP>
+2013-03-17 00:04:08.152270,74.92.64.222,74.92.185.4,X,u,q,NA
+? .128.124.196.186.in-addr.arpa PTR
+<SEP>
+2013-03-17 00:04:08.152569,74.92.243.74,74.92.185.4,X,u,q,NA
+? a13srgv3-cpqa.webb.bin A
+<SEP>
+2013-03-17 00:04:08.152777,74.92.185.4,74.92.243.74,X,u,r,AA
+? a13srgv3-cpqa.webb.bin A
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:04:08.152787,74.92.185.4,74.92.64.222,X,u,r,AA
+? .128.124.196.186.in-addr.arpa PTR
+! .128.124.196.186.in-addr.arpa PTR boggles.webb.bin
+<SEP>
+2013-03-17 00:04:08.153459,74.92.243.74,74.92.185.4,X,u,q,NA
+? a13srgv3-cpqa A
+<SEP>
+2013-03-17 00:04:08.153661,74.92.185.4,74.92.243.74,X,u,r,NA
+? a13srgv3-cpqa A
+$  SOA redacted
+<SEP>
+2013-03-17 00:04:08.153780,252.90.88.1,58.208.125.7,X,u,r,NA
+? rev.ron.hansoms.wad A
+! rev.ron.hansoms.wad CNAME han.hansoms.wad.wryness.noe
+! han.hansoms.wad.wryness.noe CNAME abimc.g.eyeballing.noe
+! abimc.g.eyeballing.noe A 59.195.39.224
+<SEP>
+2013-03-17 00:04:08.154000,252.90.88.58,74.92.185.4,X,u,r,NA
+? deacon.missals.wad A
+! deacon.missals.wad CNAME deacon.missals.wad.twizzlers.noe
+! deacon.missals.wad.twizzlers.noe CNAME gotta.g.spited.noe
+! gotta.g.spited.noe A 59.104.246.113
+! gotta.g.spited.noe A 59.104.246.129
+$ g.spited.noe NS pug.spited.noe
+$ g.spited.noe NS guy.spited.noe
+$ g.spited.noe NS wiz.spited.noe
+$ g.spited.noe NS new.spited.noe
+$ g.spited.noe NS rep.spited.noe
+$ g.spited.noe NS not.spited.noe
+$ g.spited.noe NS rig.spited.noe
+$ g.spited.noe NS jab.spited.noe
++ wiz.spited.noe A 185.213.146.193
++ new.spited.noe A 185.213.146.193
++ rep.spited.noe A 93.204.248.175
++ not.spited.noe A 201.28.105.47
++ rig.spited.noe A 104.104.47.143
++ jab.spited.noe A 82.108.222.39
++ pug.spited.noe A 252.17.56.38
++ guy.spited.noe A 104.104.47.141
++  OPTS redacted
+<SEP>
+2013-03-17 00:04:08.154774,74.92.185.4,252.90.88.58,X,u,q,NA
+? gotta.g.spited.noe A
++  OPTS redacted
+<SEP>
+2013-03-17 00:04:08.156184,252.90.88.58,74.92.185.4,X,u,r,NA
+? gotta.g.spited.noe A
+! gotta.g.spited.noe A 59.104.246.129
+! gotta.g.spited.noe A 59.104.246.113
+$ g.spited.noe NS jab.spited.noe
+$ g.spited.noe NS pug.spited.noe
+$ g.spited.noe NS guy.spited.noe
+$ g.spited.noe NS wiz.spited.noe
+$ g.spited.noe NS new.spited.noe
+$ g.spited.noe NS rep.spited.noe
+$ g.spited.noe NS not.spited.noe
+$ g.spited.noe NS rig.spited.noe
++ wiz.spited.noe A 185.213.146.193
++ new.spited.noe A 185.213.146.193
++ rep.spited.noe A 93.204.248.175
++ not.spited.noe A 201.28.105.47
++ rig.spited.noe A 104.104.47.143
++ jab.spited.noe A 82.108.222.39
++ pug.spited.noe A 252.17.56.38
++ guy.spited.noe A 104.104.47.141
++  OPTS redacted
+<SEP>
+2013-03-17 00:04:08.157087,74.92.185.4,74.92.83.144,X,u,r,NA
+? deacon.missals.wad A
+! deacon.missals.wad CNAME deacon.missals.wad.twizzlers.noe
+! deacon.missals.wad.twizzlers.noe CNAME gotta.g.spited.noe
+! gotta.g.spited.noe A 59.104.246.113
+! gotta.g.spited.noe A 59.104.246.129
+<SEP>
+2013-03-17 00:04:08.160366,58.208.125.6,252.90.88.1,X,u,q,NA
+? deacon.missals.wad A
+<SEP>
+2013-03-17 00:04:08.161813,252.90.88.1,58.208.125.6,X,u,r,NA
+? deacon.missals.wad A
+! deacon.missals.wad CNAME deacon.missals.wad.twizzlers.noe
+! deacon.missals.wad.twizzlers.noe CNAME gotta.g.spited.noe
+! gotta.g.spited.noe A 59.104.246.129
+! gotta.g.spited.noe A 59.104.246.113
+<SEP>
+2013-03-17 00:04:08.164462,74.92.62.74,74.92.185.4,X,u,q,NA
+? .128.173.4.199.in-addr.arpa PTR
+<SEP>
+2013-03-17 00:04:08.164867,74.92.185.4,74.92.62.74,X,u,r,AA
+? .128.173.4.199.in-addr.arpa PTR
+! .128.173.4.199.in-addr.arpa PTR montgolfier.webb.bin
+<SEP>
+2013-03-17 00:04:08.173158,74.92.228.106,74.92.185.4,X,u,q,NA
+? acrgejbv0.webb.bin AAAA
+<SEP>
+2013-03-17 00:04:08.173559,74.92.185.4,74.92.228.106,X,u,r,AA
+? acrgejbv0.webb.bin AAAA
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:04:08.175459,74.92.198.112,74.92.185.4,X,u,q,NA
+? sophisticate.webb.bin A
+<SEP>
+2013-03-17 00:04:08.175717,74.92.185.4,74.92.198.112,X,u,r,AA
+? sophisticate.webb.bin A
+! sophisticate.webb.bin CNAME ideograms.webb.bin
+! ideograms.webb.bin A 74.92.198.112
+<SEP>
+2013-03-17 00:04:08.177294,74.92.198.112,74.92.185.4,X,u,q,NA
+? .128.52.191.39.in-addr.arpa PTR
+<SEP>
+2013-03-17 00:04:08.177625,74.92.185.4,74.92.198.112,X,u,r,AA
+? .128.52.191.39.in-addr.arpa PTR
+! .128.52.191.39.in-addr.arpa PTR ideograms.webb.bin
+<SEP>
+2013-03-17 00:04:08.190560,74.92.243.74,74.92.185.4,X,u,q,NA
+? a13srgv3-cpqa.webb.bin A
+<SEP>
+2013-03-17 00:04:08.191108,74.92.185.4,74.92.243.74,X,u,r,AA
+? a13srgv3-cpqa.webb.bin A
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:04:08.191580,74.92.243.74,74.92.185.4,X,u,q,NA
+? a13srgv3-cpqa A
+<SEP>
+2013-03-17 00:04:08.191990,74.92.185.4,74.92.243.74,X,u,r,NA
+? a13srgv3-cpqa A
+$  SOA redacted
+<SEP>
+2013-03-17 00:04:08.192857,92.112.159.26,74.92.185.4,X,u,q,NA
+? aanydhh9s.webb.bin A
++  OPTS redacted
+<SEP>
+2013-03-17 00:04:08.193106,74.92.185.4,92.112.159.26,X,u,r,AA
+? aanydhh9s.webb.bin A
+$ webb.bin SOA redacted
++  OPTS redacted
+<SEP>
+2013-03-17 00:04:08.204200,74.92.251.88,58.105.38.17,X,u,q,NA
+? compartmentalizes TEXT
+<SEP>
+2013-03-17 00:04:08.208602,74.92.243.74,74.92.185.4,X,u,q,NA
+? a13srgv3-cpqa.webb.bin A
+<SEP>
+2013-03-17 00:04:08.209516,74.92.185.4,74.92.243.74,X,u,r,AA
+? a13srgv3-cpqa.webb.bin A
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:04:08.209892,74.92.243.74,74.92.185.4,X,u,q,NA
+? a13srgv3-cpqa A
+<SEP>
+2013-03-17 00:04:08.210139,74.92.139.204,74.92.251.88,X,u,q,NA
+? sudsiest.webb.bin A
+<SEP>
+2013-03-17 00:04:08.210310,74.92.185.4,74.92.243.74,X,u,r,NA
+? a13srgv3-cpqa A
+$  SOA redacted
+<SEP>
+2013-03-17 00:04:08.210315,74.92.251.88,74.92.139.204,X,u,r,AA
+? sudsiest.webb.bin A
+! sudsiest.webb.bin A 74.92.198.147
+$ webb.bin NS sat.webb.bin
+$ webb.bin NS leg.webb.bin
++ leg.webb.bin A 74.92.185.4
++ sat.webb.bin A 74.92.185.33
+<SEP>
+2013-03-17 00:04:08.212563,74.92.198.147,74.92.185.4,X,u,q,NA
+? .128.16.89.252.in-addr.arpa PTR
+<SEP>
+2013-03-17 00:04:08.213161,74.92.185.4,74.92.198.147,X,u,r,AA
+? .128.16.89.252.in-addr.arpa PTR
+! .128.16.89.252.in-addr.arpa PTR leeches.webb.bin
+<SEP>
+2013-03-17 00:04:08.215461,92.158.131.133,74.92.185.4,X,u,q,NA
+? openly.webb.bin SOA
++  OPTS redacted
+<SEP>
+2013-03-17 00:04:08.228650,184.202.187.53,74.92.185.4,X,u,q,NA
+? lychee.webb.bin AAAA
+<SEP>
+2013-03-17 00:04:08.229533,74.92.185.4,184.202.187.53,X,u,r,AA
+? lychee.webb.bin AAAA
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:04:08.229763,74.92.185.4,184.202.187.53,X,u,r,AA
+? lychee.webb.bin AAAA
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:04:08.230188,74.92.196.112,74.92.185.4,X,u,q,NA
+? ex.misrepresentations.wad.friend.noe A
+<SEP>
+2013-03-17 00:04:08.230193,74.92.196.112,74.92.185.4,X,u,q,NA
+? ba.misrepresentations.wad.friend.noe A
+<SEP>
+2013-03-17 00:04:08.230194,74.92.196.112,74.92.185.4,X,u,q,NA
+? xe.misrepresentations.wad.friend.noe A
+<SEP>
+2013-03-17 00:04:08.230195,74.92.196.112,74.92.185.4,X,u,q,NA
+? ex.misrepresentations.wad.friend.noe A
+<SEP>
+2013-03-17 00:04:08.230196,74.92.196.112,74.92.185.4,X,u,q,NA
+? x.misrepresentations.wad.friend.noe A
+<SEP>
+2013-03-17 00:04:08.230197,74.92.196.112,74.92.185.4,X,u,q,NA
+? ba.misrepresentations.wad.friend.noe A
+<SEP>
+2013-03-17 00:04:08.230198,74.92.196.112,74.92.185.4,X,u,q,NA
+? rb.misrepresentations.wad.friend.noe A
+<SEP>
+2013-03-17 00:04:08.230199,74.92.196.112,74.92.185.4,X,u,q,NA
+? xe.misrepresentations.wad.friend.noe A
+<SEP>
+2013-03-17 00:04:08.230200,74.92.196.112,74.92.185.4,X,u,q,NA
+? x.misrepresentations.wad.friend.noe A
+<SEP>
+2013-03-17 00:04:08.230202,74.92.196.112,74.92.185.4,X,u,q,NA
+? rb.misrepresentations.wad.friend.noe A
+<SEP>
+2013-03-17 00:04:08.230692,74.92.185.4,74.92.196.112,X,u,r,NA
+? ex.misrepresentations.wad.friend.noe A
+! ex.misrepresentations.wad.friend.noe A 139.83.88.120
+! ex.misrepresentations.wad.friend.noe A 139.83.103.95
+! ex.misrepresentations.wad.friend.noe A 139.83.103.103
+! ex.misrepresentations.wad.friend.noe A 139.83.103.109
+! ex.misrepresentations.wad.friend.noe A 139.83.103.205
+! ex.misrepresentations.wad.friend.noe A 139.83.88.104
+! ex.misrepresentations.wad.friend.noe A 139.83.88.111
+! ex.misrepresentations.wad.friend.noe A 139.83.88.116
+<SEP>
+2013-03-17 00:04:08.230697,74.92.185.4,74.92.196.112,X,u,r,NA
+? ex.misrepresentations.wad.friend.noe A
+! ex.misrepresentations.wad.friend.noe A 139.83.88.120
+! ex.misrepresentations.wad.friend.noe A 139.83.103.95
+! ex.misrepresentations.wad.friend.noe A 139.83.103.103
+! ex.misrepresentations.wad.friend.noe A 139.83.103.109
+! ex.misrepresentations.wad.friend.noe A 139.83.103.205
+! ex.misrepresentations.wad.friend.noe A 139.83.88.104
+! ex.misrepresentations.wad.friend.noe A 139.83.88.111
+! ex.misrepresentations.wad.friend.noe A 139.83.88.116
+<SEP>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2013-03-17 00:04:15.775835,74.92.185.4,74.92.251.3,X,u,r,AA
+? .128.42.246.148.in-addr.arpa PTR
+! .128.42.246.148.in-addr.arpa PTR phillips.webb.bin
+<SEP>
+2013-03-17 00:04:15.775988,74.92.251.3,74.92.185.4,X,u,q,NA
+? .128.70.1.176.in-addr.arpa PTR
+<SEP>
+2013-03-17 00:04:15.776500,74.92.185.4,74.92.251.3,X,u,r,AA
+? .128.70.1.176.in-addr.arpa PTR
+! .128.70.1.176.in-addr.arpa PTR aakkc9kiv.webb.bin
+<SEP>
+2013-03-17 00:04:15.776596,74.92.251.3,74.92.185.4,X,u,q,NA
+? .128.57.7.151.in-addr.arpa PTR
+<SEP>
+2013-03-17 00:04:15.777198,74.92.185.4,74.92.251.3,X,u,r,AA
+? .128.57.7.151.in-addr.arpa PTR
+! .128.57.7.151.in-addr.arpa PTR confidants.webb.bin
+<SEP>
+2013-03-17 00:04:15.777546,58.208.125.6,252.90.88.1,X,u,q,NA
+? grammy.prehensile.wad A
+<SEP>
+2013-03-17 00:04:15.798851,74.92.243.202,74.92.185.4,X,u,q,NA
+? cove.webb.bin AAAA
+<SEP>
+2013-03-17 00:04:15.799105,74.92.185.4,74.92.243.202,X,u,r,AA
+? cove.webb.bin AAAA
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:04:15.799755,74.92.243.202,74.92.185.4,X,u,q,NA
+? cove.webb.bin.webb.bin AAAA
+<SEP>
+2013-03-17 00:04:15.800396,74.92.185.4,74.92.243.202,X,u,r,AA
+? cove.webb.bin.webb.bin AAAA
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:04:15.800806,74.92.243.202,74.92.185.4,X,u,q,NA
+? cove.webb.bin A
+<SEP>
+2013-03-17 00:04:15.801072,74.92.185.4,74.92.243.202,X,u,r,AA
+? cove.webb.bin A
+! cove.webb.bin A 74.92.185.36
+! cove.webb.bin A 74.92.185.6
+<SEP>
+2013-03-17 00:04:15.804978,92.158.131.2,92.112.241.95,X,u,r,AA
+? aped.nita.refs.webb.bin SRV
+! aped.nita.refs.webb.bin SRV redacted
+<SEP>
+2013-03-17 00:04:15.808555,92.158.131.2,92.112.241.95,X,u,r,AA
+? duh.refs.webb.bin A
+! duh.refs.webb.bin A 92.112.159.120
+<SEP>
+2013-03-17 00:04:15.812869,74.92.204.25,74.92.185.4,X,u,q,NA
+? reliable.webb.bin A
+<SEP>
+2013-03-17 00:04:15.813184,74.92.185.4,74.92.204.25,X,u,r,AA
+? reliable.webb.bin A
+! reliable.webb.bin A 74.92.251.45
+<SEP>
+2013-03-17 00:04:15.814490,92.172.70.80,74.92.185.4,X,u,q,NA
+? aboriginals.webb.bin SOA
+<SEP>
+2013-03-17 00:04:15.814993,74.92.185.4,92.172.70.80,X,u,r,AA
+? aboriginals.webb.bin SOA
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:04:15.815803,92.172.70.80,74.92.185.4,X,u,q,NA
+? webb.bin NS
+<SEP>
+2013-03-17 00:04:15.816069,74.92.185.4,92.172.70.80,X,u,r,AA
+? webb.bin NS
+! webb.bin NS sat.webb.bin
+! webb.bin NS leg.webb.bin
+<SEP>
+2013-03-17 00:04:15.816869,92.172.70.80,74.92.185.4,X,u,q,NA
+? webb.bin SOA
+$ aboriginals.webb.bin UNKNOWN(1,255)
+<SEP>
+2013-03-17 00:04:15.817115,74.92.185.4,92.172.70.80,X,u,r,NA
+? webb.bin SOA
+<SEP>
+2013-03-17 00:04:15.818166,92.172.70.80,74.92.185.33,X,u,q,NA
+? aboriginals.webb.bin SOA
+<SEP>
+2013-03-17 00:04:15.818797,74.92.185.33,92.172.70.80,X,u,r,AA
+? aboriginals.webb.bin SOA
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:04:15.819530,92.172.70.80,74.92.185.33,X,u,q,NA
+? webb.bin NS
+<SEP>
+2013-03-17 00:04:15.819860,74.92.185.33,92.172.70.80,X,u,r,AA
+? webb.bin NS
+! webb.bin NS sat.webb.bin
+! webb.bin NS leg.webb.bin
+<SEP>
+2013-03-17 00:04:15.820574,92.172.70.80,74.92.185.33,X,u,q,NA
+? webb.bin SOA
+$ aboriginals.webb.bin UNKNOWN(1,255)
+<SEP>
+2013-03-17 00:04:15.820850,74.92.185.33,92.172.70.80,X,u,r,NA
+? webb.bin SOA
+<SEP>
+2013-03-17 00:04:15.825967,58.208.125.7,252.90.88.1,X,u,q,NA
+? ph.tom.wad A
+<SEP>
+2013-03-17 00:04:15.826856,252.90.88.1,58.208.125.7,X,u,r,NA
+? ph.tom.wad A
+! ph.tom.wad CNAME ph.tom.wad.twizzlers.noe
+! ph.tom.wad.twizzlers.noe CNAME read.g.spited.noe
+! read.g.spited.noe A 59.104.246.144
+! read.g.spited.noe A 59.104.246.153
+<SEP>
+2013-03-17 00:04:15.828583,74.92.204.25,74.92.185.4,X,u,q,NA
+? reliable.webb.bin A
+<SEP>
+2013-03-17 00:04:15.828750,74.92.185.4,74.92.204.25,X,u,r,AA
+? reliable.webb.bin A
+! reliable.webb.bin A 74.92.251.45
+<SEP>
+2013-03-17 00:04:15.830709,74.92.198.213,74.92.185.4,X,u,q,NA
+? panhandling.webb.bin A
+<SEP>
+2013-03-17 00:04:15.831030,74.92.185.4,74.92.198.213,X,u,r,AA
+? panhandling.webb.bin A
+! panhandling.webb.bin A 74.92.198.204
+<SEP>
+2013-03-17 00:04:15.837644,252.90.88.58,74.92.185.4,X,u,r,NA
+? lionized.empires.tag.wad A
+$ empires.tag.wad SOA redacted
++  OPTS redacted
+<SEP>
+2013-03-17 00:04:15.838148,74.92.185.4,74.92.74.41,X,u,r,NA
+? lionized.empires.tag.wad A
+$ empires.tag.wad SOA redacted
+<SEP>
+2013-03-17 00:04:15.839524,74.92.117.247,74.92.185.4,X,u,q,NA
+? tired.vets.mug.unions.pis.webb.bin SRV
+<SEP>
+2013-03-17 00:04:15.839800,74.92.185.4,74.92.117.247,X,u,r,AA
+? tired.vets.mug.unions.pis.webb.bin SRV
+! tired.vets.mug.unions.pis.webb.bin SRV redacted
+<SEP>
+2013-03-17 00:04:15.843814,74.92.117.247,74.92.185.4,X,u,q,NA
+? zebu.pis.webb.bin A
+<SEP>
+2013-03-17 00:04:15.844092,74.92.185.4,74.92.117.247,X,u,r,AA
+? zebu.pis.webb.bin A
+! zebu.pis.webb.bin A 74.92.185.65
+<SEP>
+2013-03-17 00:04:15.847258,74.92.25.131,74.92.185.4,X,u,q,NA
+? alpine.webb.bin A
+<SEP>
+2013-03-17 00:04:15.847263,74.92.25.131,74.92.185.4,X,u,q,NA
+? alpine.webb.bin A
+<SEP>
+2013-03-17 00:04:15.847820,74.92.185.4,74.92.25.131,X,u,r,AA
+? alpine.webb.bin A
+! alpine.webb.bin CNAME ballsier.webb.bin
+! ballsier.webb.bin A 74.92.204.12
+<SEP>
+2013-03-17 00:04:15.847828,74.92.185.4,74.92.25.131,X,u,r,AA
+? alpine.webb.bin A
+! alpine.webb.bin CNAME ballsier.webb.bin
+! ballsier.webb.bin A 74.92.204.12
+<SEP>
+2013-03-17 00:04:15.854641,74.92.98.52,74.92.185.4,X,u,q,NA
+? .128.242.80.163.in-addr.arpa PTR
+<SEP>
+2013-03-17 00:04:15.855084,74.92.185.4,74.92.98.52,X,u,r,AA
+? .128.242.80.163.in-addr.arpa PTR
+! .128.242.80.163.in-addr.arpa PTR aa13.webb.bin
+<SEP>
+2013-03-17 00:04:15.867071,74.92.198.213,74.92.185.4,X,u,q,NA
+? breastbones.webb.bin A
+<SEP>
+2013-03-17 00:04:15.867182,74.92.74.41,74.92.185.4,X,u,q,NA
+? enamored.empires.tag.wad A
+<SEP>
+2013-03-17 00:04:15.867452,74.92.185.4,74.92.198.213,X,u,r,AA
+? breastbones.webb.bin A
+! breastbones.webb.bin A 74.92.198.214
+<SEP>
+2013-03-17 00:04:15.867478,74.92.185.4,252.90.88.58,X,u,q,NA
+? enamored.empires.tag.wad A
++  OPTS redacted
+<SEP>
+2013-03-17 00:04:15.872107,74.92.198.112,74.92.185.4,X,u,q,NA
+? ideograms.webb.bin A
+<SEP>
+2013-03-17 00:04:15.872392,74.92.185.4,74.92.198.112,X,u,r,AA
+? ideograms.webb.bin A
+! ideograms.webb.bin A 74.92.198.112
+<SEP>
+2013-03-17 00:04:15.872861,74.92.224.65,74.92.185.4,X,u,q,NA
+? legitimizing.warrens.glazes.wad A
+<SEP>
+2013-03-17 00:04:15.873101,74.92.185.4,74.92.224.65,X,u,r,NA
+? legitimizing.warrens.glazes.wad A
+! legitimizing.warrens.glazes.wad CNAME warrens.a.glazes.wad
+! warrens.a.glazes.wad A 205.172.16.64
+! warrens.a.glazes.wad A 205.172.16.65
+! warrens.a.glazes.wad A 205.172.16.66
+! warrens.a.glazes.wad A 205.172.16.67
+! warrens.a.glazes.wad A 205.172.16.68
+! warrens.a.glazes.wad A 205.172.16.69
+! warrens.a.glazes.wad A 205.172.16.70
+! warrens.a.glazes.wad A 205.172.16.71
+! warrens.a.glazes.wad A 205.172.16.72
+! warrens.a.glazes.wad A 205.172.16.73
+! warrens.a.glazes.wad A 205.172.16.78
+<SEP>
+2013-03-17 00:04:15.874684,74.92.198.112,74.92.185.4,X,u,q,NA
+? ideograms.webb.bin A
+<SEP>
+2013-03-17 00:04:15.875063,74.92.185.4,74.92.198.112,X,u,r,AA
+? ideograms.webb.bin A
+! ideograms.webb.bin A 74.92.198.112
+<SEP>
+2013-03-17 00:04:15.875905,74.92.224.65,74.92.185.4,X,u,q,NA
+? decamped.webb.bin A
+<SEP>
+2013-03-17 00:04:15.876021,74.92.185.4,74.92.224.65,X,u,r,AA
+? decamped.webb.bin A
+! decamped.webb.bin CNAME reenacts.webb.bin
+! reenacts.webb.bin A 58.208.125.19
+<SEP>
+2013-03-17 00:04:15.879931,74.92.204.25,74.92.185.4,X,u,q,NA
+? reliable.webb.bin A
+<SEP>
+2013-03-17 00:04:15.880343,74.92.185.4,74.92.204.25,X,u,r,AA
+? reliable.webb.bin A
+! reliable.webb.bin A 74.92.251.45
+<SEP>
+2013-03-17 00:04:15.885405,92.228.166.106,74.92.185.4,X,u,q,NA
+? .128.85.189.182.in-addr.arpa PTR
+<SEP>
+2013-03-17 00:04:15.885760,74.92.185.4,92.228.166.106,X,u,r,AA
+? .128.85.189.182.in-addr.arpa PTR
+! .128.85.189.182.in-addr.arpa PTR lassoing.webb.bin
+<SEP>
+2013-03-17 00:04:15.892796,74.92.252.85,74.92.185.4,X,u,q,NA
+? flare.webb.bin AAAA
+<SEP>
+2013-03-17 00:04:15.893245,74.92.185.4,74.92.252.85,X,u,r,AA
+? flare.webb.bin AAAA
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:04:15.895839,74.92.204.25,74.92.185.4,X,u,q,NA
+? reliable.webb.bin A
+<SEP>
+2013-03-17 00:04:15.896061,74.92.185.4,74.92.204.25,X,u,r,AA
+? reliable.webb.bin A
+! reliable.webb.bin A 74.92.251.45
+<SEP>
+2013-03-17 00:04:15.913480,74.92.147.77,74.92.185.4,X,u,q,NA
+? misses.webb.bin A
+<SEP>
+2013-03-17 00:04:15.913877,74.92.185.4,74.92.147.77,X,u,r,AA
+? misses.webb.bin A
+! misses.webb.bin A 74.92.164.231
+<SEP>
+2013-03-17 00:04:15.915597,92.158.131.2,92.112.172.63,X,u,r,AA
+? refs.webb.bin UNKNOWN((null),35)
+! refs.webb.bin UNKNOWN(35,1) redacted
+<SEP>
+2013-03-17 00:04:15.919873,92.158.131.2,92.112.172.63,X,u,r,AA
+? aped.nita.refs.webb.bin SRV
+! aped.nita.refs.webb.bin SRV redacted
+<SEP>
+2013-03-17 00:04:15.920261,74.92.226.78,74.92.185.4,X,u,q,NA
+? masticate.nullify.wad A
+<SEP>
+2013-03-17 00:04:15.920266,74.92.226.78,74.92.185.4,X,u,q,NA
+? masticate.nullify.wad A
+<SEP>
+2013-03-17 00:04:15.920497,74.92.185.4,252.90.88.58,X,u,q,NA
+? aaabzpfzs4gtbgrob1dppa.medalists.tat.shortened.wad A
++  OPTS redacted
+<SEP>
+2013-03-17 00:04:15.923539,92.158.131.2,92.112.172.63,X,u,r,AA
+? duh.refs.webb.bin A
+! duh.refs.webb.bin A 92.112.159.120
+<SEP>
+2013-03-17 00:04:15.924875,252.90.88.1,58.208.125.6,X,u,r,NA
+? grammy.prehensile.wad A
+! grammy.prehensile.wad CNAME misstatements.porringers.noe
+! misstatements.porringers.noe A 175.62.74.158
+! misstatements.porringers.noe A 175.62.74.166
+! misstatements.porringers.noe A 175.62.74.178
+! misstatements.porringers.noe A 175.62.74.202
+! misstatements.porringers.noe A 175.62.74.206
+! misstatements.porringers.noe A 175.62.74.26
+! misstatements.porringers.noe A 175.62.74.42
+! misstatements.porringers.noe A 175.62.74.110
+<SEP>
+2013-03-17 00:04:15.929467,58.208.125.7,252.90.88.1,X,u,q,NA
+? masticate.nullify.wad A
+<SEP>
+2013-03-17 00:04:15.934333,184.202.187.111,74.92.185.4,X,u,q,NA
+? disproportionately.glazes.wad A
+<SEP>
+2013-03-17 00:04:15.934337,184.202.187.111,74.92.185.4,X,u,q,NA
+? disproportionately.glazes.wad AAAA
+<SEP>
+2013-03-17 00:04:15.934755,74.92.185.4,184.202.187.111,X,u,r,NA
+? disproportionately.glazes.wad AAAA
+! disproportionately.glazes.wad CNAME legitimizing.grind.a.glazes.wad
+! legitimizing.grind.a.glazes.wad AAAA redacted
+<SEP>
+2013-03-17 00:04:15.934760,74.92.185.4,184.202.187.111,X,u,r,NA
+? disproportionately.glazes.wad A
+! disproportionately.glazes.wad CNAME legitimizing.grind.a.glazes.wad
+! legitimizing.grind.a.glazes.wad A 205.172.16.132
+! legitimizing.grind.a.glazes.wad A 205.172.16.133
+! legitimizing.grind.a.glazes.wad A 205.172.16.134
+! legitimizing.grind.a.glazes.wad A 205.172.16.135
+! legitimizing.grind.a.glazes.wad A 205.172.16.136
+! legitimizing.grind.a.glazes.wad A 205.172.16.137
+! legitimizing.grind.a.glazes.wad A 205.172.16.142
+! legitimizing.grind.a.glazes.wad A 205.172.16.128
+! legitimizing.grind.a.glazes.wad A 205.172.16.129
+! legitimizing.grind.a.glazes.wad A 205.172.16.130
+! legitimizing.grind.a.glazes.wad A 205.172.16.131
+<SEP>
+2013-03-17 00:04:15.934904,74.92.185.4,184.202.187.111,X,u,r,NA
+? disproportionately.glazes.wad AAAA
+! disproportionately.glazes.wad CNAME legitimizing.grind.a.glazes.wad
+! legitimizing.grind.a.glazes.wad AAAA redacted
+<SEP>
+2013-03-17 00:04:15.934909,74.92.185.4,184.202.187.111,X,u,r,NA
+? disproportionately.glazes.wad A
+! disproportionately.glazes.wad CNAME legitimizing.grind.a.glazes.wad
+! legitimizing.grind.a.glazes.wad A 205.172.16.132
+! legitimizing.grind.a.glazes.wad A 205.172.16.133
+! legitimizing.grind.a.glazes.wad A 205.172.16.134
+! legitimizing.grind.a.glazes.wad A 205.172.16.135
+! legitimizing.grind.a.glazes.wad A 205.172.16.136
+! legitimizing.grind.a.glazes.wad A 205.172.16.137
+! legitimizing.grind.a.glazes.wad A 205.172.16.142
+! legitimizing.grind.a.glazes.wad A 205.172.16.128
+! legitimizing.grind.a.glazes.wad A 205.172.16.129
+! legitimizing.grind.a.glazes.wad A 205.172.16.130
+! legitimizing.grind.a.glazes.wad A 205.172.16.131
+<SEP>
+2013-03-17 00:04:15.936018,74.92.226.78,74.92.185.4,X,u,q,NA
+? dextrose.nullify.wad A
+<SEP>
+2013-03-17 00:04:15.936038,74.92.226.78,74.92.185.4,X,u,q,NA
+? dextrose.nullify.wad A
+<SEP>
+2013-03-17 00:04:15.936268,184.202.187.111,74.92.185.4,X,u,q,NA
+? gauze.webb.bin A
+<SEP>
+2013-03-17 00:04:15.936325,74.92.226.78,74.92.185.4,X,u,q,NA
+? fishy.g.eyeballing.noe A
+<SEP>
+2013-03-17 00:04:15.936345,74.92.226.78,74.92.185.4,X,u,q,NA
+? fishy.g.eyeballing.noe A
+<SEP>
+2013-03-17 00:04:15.936418,74.92.185.4,252.90.88.58,X,u,q,NA
+? wreck.g.spited.noe A
++  OPTS redacted
+<SEP>
+2013-03-17 00:04:15.936733,74.92.185.4,252.90.88.58,X,u,q,NA
+? fishy.g.eyeballing.noe A
++  OPTS redacted
+<SEP>
+2013-03-17 00:04:15.936846,74.92.185.4,184.202.187.111,X,u,r,AA
+? gauze.webb.bin A
+! gauze.webb.bin A 74.92.164.9
+<SEP>
+2013-03-17 00:04:15.936964,74.92.185.4,184.202.187.111,X,u,r,AA
+? gauze.webb.bin A
+! gauze.webb.bin A 74.92.164.9
+<SEP>
+2013-03-17 00:04:15.938398,184.202.187.111,74.92.185.4,X,u,q,NA
+? gauze.webb.bin AAAA
+<SEP>
+2013-03-17 00:04:15.938402,184.202.187.111,74.92.185.4,X,u,q,NA
+? gauze.webb.bin A
+<SEP>
+2013-03-17 00:04:15.938759,74.92.185.4,184.202.187.111,X,u,r,AA
+? gauze.webb.bin A
+! gauze.webb.bin A 74.92.164.9
+<SEP>
+2013-03-17 00:04:15.938769,74.92.185.4,184.202.187.111,X,u,r,AA
+? gauze.webb.bin AAAA
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:04:15.938883,74.92.185.4,184.202.187.111,X,u,r,AA
+? gauze.webb.bin A
+! gauze.webb.bin A 74.92.164.9
+<SEP>
+2013-03-17 00:04:15.938888,74.92.185.4,184.202.187.111,X,u,r,AA
+? gauze.webb.bin AAAA
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:04:15.939444,74.92.254.2,74.92.185.4,X,u,q,NA
+? ak.misrepresentations.wad.friend.noe A
+<SEP>
+2013-03-17 00:04:15.939447,74.92.254.2,74.92.185.4,X,u,q,NA
+? ad.misrepresentations.wad.friend.noe A
+<SEP>
+2013-03-17 00:04:15.939448,74.92.254.2,74.92.185.4,X,u,q,NA
+? is.misrepresentations.wad.friend.noe A
+<SEP>
+2013-03-17 00:04:15.939449,74.92.254.2,74.92.185.4,X,u,q,NA
+? es.misrepresentations.wad.friend.noe A
+<SEP>
+2013-03-17 00:04:15.939754,74.92.185.4,74.92.254.2,X,u,r,NA
+? ak.misrepresentations.wad.friend.noe A
+! ak.misrepresentations.wad.friend.noe A 139.83.88.100
+! ak.misrepresentations.wad.friend.noe A 139.83.88.135
+! ak.misrepresentations.wad.friend.noe A 139.83.103.103
+! ak.misrepresentations.wad.friend.noe A 139.83.103.146
+! ak.misrepresentations.wad.friend.noe A 139.83.103.148
+! ak.misrepresentations.wad.friend.noe A 139.83.103.181
+! ak.misrepresentations.wad.friend.noe A 139.83.103.207
+! ak.misrepresentations.wad.friend.noe A 139.83.88.98
+<SEP>
+2013-03-17 00:04:15.939759,74.92.185.4,74.92.254.2,X,u,r,NA
+? is.misrepresentations.wad.friend.noe A
+! is.misrepresentations.wad.friend.noe A 139.7.80.65
+! is.misrepresentations.wad.friend.noe A 139.7.80.74
+! is.misrepresentations.wad.friend.noe A 139.7.114.129
+! is.misrepresentations.wad.friend.noe A 139.7.114.156
+! is.misrepresentations.wad.friend.noe A 139.7.114.165
+! is.misrepresentations.wad.friend.noe A 139.7.114.196
+! is.misrepresentations.wad.friend.noe A 139.7.114.197
+! is.misrepresentations.wad.friend.noe A 139.7.80.45
+<SEP>
+2013-03-17 00:04:15.939771,74.92.185.4,252.90.88.58,X,u,q,NA
+? ad.misrepresentations.wad.friend.noe A
++  OPTS redacted
+<SEP>
+2013-03-17 00:04:15.939874,74.92.185.4,252.90.88.58,X,u,q,NA
+? es.misrepresentations.wad.friend.noe A
++  OPTS redacted
+<SEP>
+2013-03-17 00:04:15.946088,92.228.139.254,74.92.185.4,X,u,q,NA
+? abb-nebx1k2aa.webb.bin.webb.bin AAAA
+<SEP>
+2013-03-17 00:04:15.946113,92.228.139.254,74.92.185.4,X,u,q,NA
+? aabb-nebx1k2a.webb.bin.webb.bin AAAA
+<SEP>
+2013-03-17 00:04:15.946691,74.92.185.4,92.228.139.254,X,u,r,AA
+? aabb-nebx1k2a.webb.bin.webb.bin AAAA
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:04:15.946692,74.92.185.4,92.228.139.254,X,u,r,AA
+? abb-nebx1k2aa.webb.bin.webb.bin AAAA
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:04:15.947229,92.228.139.254,74.92.185.4,X,u,q,NA
+? aabb-nebx1k2a.webb.bin A
+<SEP>
+2013-03-17 00:04:15.947398,74.92.185.4,92.228.139.254,X,u,r,AA
+? aabb-nebx1k2a.webb.bin A
+! aabb-nebx1k2a.webb.bin A 74.92.243.32
+<SEP>
+2013-03-17 00:04:15.947402,92.228.139.254,74.92.185.4,X,u,q,NA
+? abb-nebx1k2aa.webb.bin A
+<SEP>
+2013-03-17 00:04:15.947817,74.92.185.4,92.228.139.254,X,u,r,AA
+? abb-nebx1k2aa.webb.bin A
+! abb-nebx1k2aa.webb.bin A 92.228.166.121
+<SEP>
+2013-03-17 00:04:15.951529,74.92.39.80,74.92.168.21,X,u,q,NA
+? roman.superstitions.wad A
+<SEP>
+2013-03-17 00:04:15.951534,74.92.39.80,74.92.168.21,X,u,q,NA
+? roman.superstitions.wad A
+<SEP>
+2013-03-17 00:04:15.954039,74.92.168.21,74.92.185.4,X,u,q,NA
+? berth.g.spited.noe A
++  OPTS redacted
+<SEP>
+2013-03-17 00:04:15.954400,74.92.185.4,74.92.168.21,X,u,r,NA
+? berth.g.spited.noe A
+! berth.g.spited.noe A 59.104.246.130
+! berth.g.spited.noe A 59.104.246.145
++  OPTS redacted
+<SEP>
+2013-03-17 00:04:15.955292,74.92.168.21,74.92.39.80,X,u,r,NA
+? roman.superstitions.wad A
+! roman.superstitions.wad CNAME roman.superstitions.rajas.noe
+! roman.superstitions.rajas.noe CNAME roman.superstitions.wad.twizzlers.noe
+! roman.superstitions.wad.twizzlers.noe CNAME berth.g.spited.noe
+! berth.g.spited.noe A 59.104.246.130
+! berth.g.spited.noe A 59.104.246.145
+<SEP>
+2013-03-17 00:04:15.955297,74.92.168.21,74.92.39.80,X,u,r,NA
+? roman.superstitions.wad A
+! roman.superstitions.wad CNAME roman.superstitions.rajas.noe
+! roman.superstitions.rajas.noe CNAME roman.superstitions.wad.twizzlers.noe
+! roman.superstitions.wad.twizzlers.noe CNAME berth.g.spited.noe
+! berth.g.spited.noe A 59.104.246.130
+! berth.g.spited.noe A 59.104.246.145
+<SEP>
+2013-03-17 00:04:15.956832,74.92.39.80,74.92.168.21,X,u,q,NA
+? roman.superstitions.wad AAAA
+<SEP>
+2013-03-17 00:04:15.956836,74.92.39.80,74.92.168.21,X,u,q,NA
+? roman.superstitions.wad AAAA
+<SEP>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2013-03-17 00:06:04.466724,74.92.185.4,74.92.150.150,X,u,r,NA
+? cot.invisible.wad A
+! cot.invisible.wad A 181.125.217.6
+<SEP>
+2013-03-17 00:06:04.466727,74.92.185.4,74.92.150.150,X,u,r,NA
+? cot.invisible.wad A
+! cot.invisible.wad A 181.125.217.6
+<SEP>
+2013-03-17 00:06:04.467021,74.92.243.41,74.92.185.4,X,u,q,NA
+? aac0q48w1awba.webb.bin.webb.bin AAAA
+<SEP>
+2013-03-17 00:06:04.467645,74.92.185.4,74.92.243.41,X,u,r,AA
+? aac0q48w1awba.webb.bin.webb.bin AAAA
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:06:04.468229,74.92.243.41,74.92.185.4,X,u,q,NA
+? aac0q48w1awba.webb.bin A
+<SEP>
+2013-03-17 00:06:04.468332,74.92.185.4,74.92.243.41,X,u,r,AA
+? aac0q48w1awba.webb.bin A
+! aac0q48w1awba.webb.bin A 74.92.243.1
+<SEP>
+2013-03-17 00:06:04.476159,74.92.4.24,74.92.185.4,X,u,q,NA
+? tc.pushers.nita.webb.bin PTR
+<SEP>
+2013-03-17 00:06:04.476178,74.92.4.24,74.92.185.4,X,u,q,NA
+? tc.pushers.nita.webb.bin PTR
+<SEP>
+2013-03-17 00:06:04.476652,92.228.166.105,74.92.185.4,X,u,q,NA
+? .128.85.189.182.in-addr.arpa PTR
+<SEP>
+2013-03-17 00:06:04.476918,74.92.185.4,74.92.4.24,X,u,r,AA
+? tc.pushers.nita.webb.bin PTR
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:06:04.476921,74.92.185.4,74.92.4.24,X,u,r,AA
+? tc.pushers.nita.webb.bin PTR
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:06:04.477181,74.92.185.4,92.228.166.105,X,u,r,AA
+? .128.85.189.182.in-addr.arpa PTR
+! .128.85.189.182.in-addr.arpa PTR lassoing.webb.bin
+<SEP>
+2013-03-17 00:06:04.478537,252.90.88.58,74.92.185.4,X,u,r,NA
+? blantyre.vanishing.wad.rajas.noe A
+! blantyre.vanishing.wad.rajas.noe CNAME gent.ti.ty.friend.noe
+! gent.ti.ty.friend.noe CNAME let.ti.ty.friend.noe
+! let.ti.ty.friend.noe CNAME ti.ty.erg.noe
+! ti.ty.erg.noe CNAME mitt.d.spited.noe
+! mitt.d.spited.noe A 59.150.68.198
+! mitt.d.spited.noe A 59.150.68.214
+$ d.spited.noe NS pox.spited.noe
+$ d.spited.noe NS yet.spited.noe
+$ d.spited.noe NS big.spited.noe
+$ d.spited.noe NS tim.spited.noe
+$ d.spited.noe NS nor.spited.noe
+$ d.spited.noe NS sob.spited.noe
+$ d.spited.noe NS ola.spited.noe
+$ d.spited.noe NS toy.spited.noe
++ pox.spited.noe A 185.213.146.192
++ yet.spited.noe A 201.28.105.38
++ big.spited.noe A 185.213.146.192
++ tim.spited.noe A 11.47.152.173
++ nor.spited.noe A 82.108.222.36
++ sob.spited.noe A 252.170.239.46
++ ola.spited.noe A 104.104.47.133
++ toy.spited.noe A 11.47.152.189
++  OPTS redacted
+<SEP>
+2013-03-17 00:06:04.479444,74.92.185.4,252.90.88.58,X,u,q,NA
+? gent.ti.ty.friend.noe A
++  OPTS redacted
+<SEP>
+2013-03-17 00:06:04.481347,252.90.88.58,74.92.185.4,X,u,r,NA
+? gent.ti.ty.friend.noe A
+! gent.ti.ty.friend.noe CNAME let.ti.ty.friend.noe
+! let.ti.ty.friend.noe CNAME ti.ty.erg.noe
+! ti.ty.erg.noe CNAME mitt.d.spited.noe
+! mitt.d.spited.noe A 59.150.68.214
+! mitt.d.spited.noe A 59.150.68.198
+$ d.spited.noe NS toy.spited.noe
+$ d.spited.noe NS pox.spited.noe
+$ d.spited.noe NS yet.spited.noe
+$ d.spited.noe NS big.spited.noe
+$ d.spited.noe NS tim.spited.noe
+$ d.spited.noe NS nor.spited.noe
+$ d.spited.noe NS sob.spited.noe
+$ d.spited.noe NS ola.spited.noe
++ pox.spited.noe A 185.213.146.192
++ yet.spited.noe A 201.28.105.38
++ big.spited.noe A 185.213.146.192
++ tim.spited.noe A 11.47.152.173
++ nor.spited.noe A 82.108.222.36
++ sob.spited.noe A 252.170.239.46
++ ola.spited.noe A 104.104.47.133
++ toy.spited.noe A 11.47.152.189
++  OPTS redacted
+<SEP>
+2013-03-17 00:06:04.482117,74.92.185.4,252.90.88.58,X,u,q,NA
+? mitt.d.spited.noe A
++  OPTS redacted
+<SEP>
+2013-03-17 00:06:04.483464,252.90.88.58,74.92.185.4,X,u,r,NA
+? mitt.d.spited.noe A
+! mitt.d.spited.noe A 59.150.68.198
+! mitt.d.spited.noe A 59.150.68.214
+$ d.spited.noe NS ola.spited.noe
+$ d.spited.noe NS toy.spited.noe
+$ d.spited.noe NS pox.spited.noe
+$ d.spited.noe NS yet.spited.noe
+$ d.spited.noe NS big.spited.noe
+$ d.spited.noe NS tim.spited.noe
+$ d.spited.noe NS nor.spited.noe
+$ d.spited.noe NS sob.spited.noe
++ pox.spited.noe A 185.213.146.192
++ yet.spited.noe A 201.28.105.38
++ big.spited.noe A 185.213.146.192
++ tim.spited.noe A 11.47.152.173
++ nor.spited.noe A 82.108.222.36
++ sob.spited.noe A 252.170.239.46
++ ola.spited.noe A 104.104.47.133
++ toy.spited.noe A 11.47.152.189
++  OPTS redacted
+<SEP>
+2013-03-17 00:06:04.483489,74.92.189.91,74.92.185.4,X,u,q,NA
+? theism.spited.wad A
+<SEP>
+2013-03-17 00:06:04.483695,74.92.185.4,74.92.189.91,X,u,r,NA
+? theism.spited.wad A
+! theism.spited.wad CNAME theism.spited.wad.wryness.noe
+! theism.spited.wad.wryness.noe CNAME heath.d.eyeballing.noe
+! heath.d.eyeballing.noe A 59.195.65.29
+<SEP>
+2013-03-17 00:06:04.484129,74.92.185.4,58.229.128.1,X,u,r,NA
+? blantyre.vanishing.wad A
+! blantyre.vanishing.wad CNAME blantyre.vanishing.wad.rajas.noe
+! blantyre.vanishing.wad.rajas.noe CNAME gent.ti.ty.friend.noe
+! gent.ti.ty.friend.noe CNAME let.ti.ty.friend.noe
+! let.ti.ty.friend.noe CNAME ti.ty.erg.noe
+! ti.ty.erg.noe CNAME mitt.d.spited.noe
+! mitt.d.spited.noe A 59.150.68.198
+! mitt.d.spited.noe A 59.150.68.214
+<SEP>
+2013-03-17 00:06:04.485476,58.208.125.7,252.90.88.1,X,u,q,NA
+? .64.240.148.214.in-addr.arpa PTR
+<SEP>
+2013-03-17 00:06:04.491582,74.92.232.218,74.92.185.4,X,u,q,NA
+? plot.glazes.wad A
+<SEP>
+2013-03-17 00:06:04.491586,74.92.232.218,74.92.185.4,X,u,q,NA
+? plot.glazes.wad A
+<SEP>
+2013-03-17 00:06:04.492043,74.92.185.4,74.92.232.218,X,u,r,NA
+? plot.glazes.wad A
+! plot.glazes.wad CNAME kirghistan.a.glazes.wad
+! kirghistan.a.glazes.wad A 205.172.16.118
+! kirghistan.a.glazes.wad A 205.172.16.117
+<SEP>
+2013-03-17 00:06:04.492047,74.92.185.4,74.92.232.218,X,u,r,NA
+? plot.glazes.wad A
+! plot.glazes.wad CNAME kirghistan.a.glazes.wad
+! kirghistan.a.glazes.wad A 205.172.16.118
+! kirghistan.a.glazes.wad A 205.172.16.117
+<SEP>
+2013-03-17 00:06:04.495585,252.90.88.1,58.208.125.7,X,u,r,NA
+? gluey.frankfurt.wad A
+! gluey.frankfurt.wad CNAME gluey.inconsistencies.checkrooms.wad
+! gluey.inconsistencies.checkrooms.wad A 122.202.176.192
+<SEP>
+2013-03-17 00:06:04.495715,74.92.198.213,74.92.185.4,X,u,q,NA
+? panhandling.webb.bin A
+<SEP>
+2013-03-17 00:06:04.496106,74.92.185.4,74.92.198.213,X,u,r,AA
+? panhandling.webb.bin A
+! panhandling.webb.bin A 74.92.198.204
+<SEP>
+2013-03-17 00:06:04.504992,74.92.89.149,74.92.185.4,X,u,q,NA
+? swell.webb.bin A
+<SEP>
+2013-03-17 00:06:04.504996,74.92.89.149,74.92.185.4,X,u,q,NA
+? swell.webb.bin A
+<SEP>
+2013-03-17 00:06:04.505324,74.92.185.4,74.92.89.149,X,u,r,AA
+? swell.webb.bin A
+! swell.webb.bin A 74.92.164.105
+<SEP>
+2013-03-17 00:06:04.505329,74.92.185.4,74.92.89.149,X,u,r,AA
+? swell.webb.bin A
+! swell.webb.bin A 74.92.164.105
+<SEP>
+2013-03-17 00:06:04.517280,184.202.84.207,74.92.185.4,X,u,q,NA
+? decamped.webb.bin AAAA
+<SEP>
+2013-03-17 00:06:04.517284,184.202.84.207,74.92.185.4,X,u,q,NA
+? decamped.webb.bin A
+<SEP>
+2013-03-17 00:06:04.517718,74.92.185.4,184.202.84.207,X,u,r,AA
+? decamped.webb.bin A
+! decamped.webb.bin CNAME reenacts.webb.bin
+! reenacts.webb.bin A 58.208.125.19
+<SEP>
+2013-03-17 00:06:04.517723,74.92.185.4,184.202.84.207,X,u,r,AA
+? decamped.webb.bin AAAA
+! decamped.webb.bin CNAME reenacts.webb.bin
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:06:04.517830,74.92.185.4,184.202.84.207,X,u,r,AA
+? decamped.webb.bin A
+! decamped.webb.bin CNAME reenacts.webb.bin
+! reenacts.webb.bin A 58.208.125.19
+<SEP>
+2013-03-17 00:06:04.517835,74.92.185.4,184.202.84.207,X,u,r,AA
+? decamped.webb.bin AAAA
+! decamped.webb.bin CNAME reenacts.webb.bin
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:06:04.532233,74.92.198.213,74.92.185.4,X,u,q,NA
+? breastbones.webb.bin A
+<SEP>
+2013-03-17 00:06:04.532381,74.92.98.52,74.92.185.4,X,u,q,NA
+? .128.242.80.163.in-addr.arpa PTR
+<SEP>
+2013-03-17 00:06:04.532655,74.92.185.4,74.92.98.52,X,u,r,AA
+? .128.242.80.163.in-addr.arpa PTR
+! .128.242.80.163.in-addr.arpa PTR aa13.webb.bin
+<SEP>
+2013-03-17 00:06:04.532793,74.92.185.4,74.92.198.213,X,u,r,AA
+? breastbones.webb.bin A
+! breastbones.webb.bin A 74.92.198.214
+<SEP>
+2013-03-17 00:06:04.541939,74.92.117.247,74.92.185.4,X,u,q,NA
+? tired.vets.mug.unions.pis.webb.bin SRV
+<SEP>
+2013-03-17 00:06:04.542341,74.92.185.4,74.92.117.247,X,u,r,AA
+? tired.vets.mug.unions.pis.webb.bin SRV
+! tired.vets.mug.unions.pis.webb.bin SRV redacted
+<SEP>
+2013-03-17 00:06:04.544950,74.92.16.132,74.92.185.4,X,u,q,NA
+? tired.vets.aaaaaaaaaaaaaaaaaaaaaaa.silica.zebu.pis.webb.bin SRV
+<SEP>
+2013-03-17 00:06:04.544955,74.92.16.132,74.92.185.4,X,u,q,NA
+? tired.vets.aaaaaaaaaaaaaaaaaaaaaaa.silica.zebu.pis.webb.bin SRV
+<SEP>
+2013-03-17 00:06:04.545284,74.92.185.4,74.92.16.132,X,u,r,AA
+? tired.vets.aaaaaaaaaaaaaaaaaaaaaaa.silica.zebu.pis.webb.bin SRV
+$ pis.webb.bin SOA redacted
+<SEP>
+2013-03-17 00:06:04.545288,74.92.185.4,74.92.16.132,X,u,r,AA
+? tired.vets.aaaaaaaaaaaaaaaaaaaaaaa.silica.zebu.pis.webb.bin SRV
+$ pis.webb.bin SOA redacted
+<SEP>
+2013-03-17 00:06:04.545475,74.92.117.247,74.92.185.4,X,u,q,NA
+? zebu.pis.webb.bin A
+<SEP>
+2013-03-17 00:06:04.545592,74.92.185.4,74.92.117.247,X,u,r,AA
+? zebu.pis.webb.bin A
+! zebu.pis.webb.bin A 74.92.185.65
+<SEP>
+2013-03-17 00:06:04.546118,74.92.16.132,74.92.185.4,X,u,q,NA
+? tired.vets.zebu.pis.webb.bin SRV
+<SEP>
+2013-03-17 00:06:04.546120,74.92.16.132,74.92.185.4,X,u,q,NA
+? tired.vets.zebu.pis.webb.bin SRV
+<SEP>
+2013-03-17 00:06:04.546270,74.92.185.4,74.92.16.132,X,u,r,AA
+? tired.vets.zebu.pis.webb.bin SRV
+$ pis.webb.bin SOA redacted
+<SEP>
+2013-03-17 00:06:04.546271,74.92.185.4,74.92.16.132,X,u,r,AA
+? tired.vets.zebu.pis.webb.bin SRV
+$ pis.webb.bin SOA redacted
+<SEP>
+2013-03-17 00:06:04.550931,74.92.155.44,21.59.186.240,X,u,q,NA
+? traps.dullest.wad TEXT
+<SEP>
+2013-03-17 00:06:04.551198,92.73.244.39,74.92.185.4,X,u,q,NA
+? multidimensional.nita.pis.webb.bin SRV
+<SEP>
+2013-03-17 00:06:04.551202,92.73.244.39,74.92.185.4,X,u,q,NA
+? multidimensional.nita.pis.webb.bin SRV
+<SEP>
+2013-03-17 00:06:04.551602,74.92.185.4,92.73.244.39,X,u,r,AA
+? multidimensional.nita.pis.webb.bin SRV
+$ pis.webb.bin SOA redacted
+<SEP>
+2013-03-17 00:06:04.551603,74.92.185.4,92.73.244.39,X,u,r,AA
+? multidimensional.nita.pis.webb.bin SRV
+$ pis.webb.bin SOA redacted
+<SEP>
+2013-03-17 00:06:04.553739,92.73.244.39,74.92.185.4,X,u,q,NA
+? multidimensional.nita.pis.webb.bin SRV
+<SEP>
+2013-03-17 00:06:04.553758,92.73.244.39,74.92.185.4,X,u,q,NA
+? multidimensional.nita.pis.webb.bin SRV
+<SEP>
+2013-03-17 00:06:04.553947,74.92.185.4,92.73.244.39,X,u,r,AA
+? multidimensional.nita.pis.webb.bin SRV
+$ pis.webb.bin SOA redacted
+<SEP>
+2013-03-17 00:06:04.553949,74.92.185.4,92.73.244.39,X,u,r,AA
+? multidimensional.nita.pis.webb.bin SRV
+$ pis.webb.bin SOA redacted
+<SEP>
+2013-03-17 00:06:04.556911,92.73.244.39,74.92.185.4,X,u,q,NA
+? multidimensional.nita.pis.webb.bin SRV
+<SEP>
+2013-03-17 00:06:04.556939,92.73.244.39,74.92.185.4,X,u,q,NA
+? multidimensional.nita.pis.webb.bin SRV
+<SEP>
+2013-03-17 00:06:04.557264,74.92.185.4,92.73.244.39,X,u,r,AA
+? multidimensional.nita.pis.webb.bin SRV
+$ pis.webb.bin SOA redacted
+<SEP>
+2013-03-17 00:06:04.557266,74.92.185.4,92.73.244.39,X,u,r,AA
+? multidimensional.nita.pis.webb.bin SRV
+$ pis.webb.bin SOA redacted
+<SEP>
+2013-03-17 00:06:04.557833,92.73.244.39,74.92.185.4,X,u,q,NA
+? trap.pis.webb.bin AAAA
+<SEP>
+2013-03-17 00:06:04.557856,92.73.244.39,74.92.185.4,X,u,q,NA
+? trap.pis.webb.bin AAAA
+<SEP>
+2013-03-17 00:06:04.558268,74.92.185.4,92.73.244.39,X,u,r,AA
+? trap.pis.webb.bin AAAA
+$ pis.webb.bin SOA redacted
+<SEP>
+2013-03-17 00:06:04.558270,74.92.185.4,92.73.244.39,X,u,r,AA
+? trap.pis.webb.bin AAAA
+$ pis.webb.bin SOA redacted
+<SEP>
+2013-03-17 00:06:04.558456,92.73.244.39,74.92.185.4,X,u,q,NA
+? trap.pis.webb.bin.webb.bin AAAA
+<SEP>
+2013-03-17 00:06:04.558477,92.73.244.39,74.92.185.4,X,u,q,NA
+? trap.pis.webb.bin.webb.bin AAAA
+<SEP>
+2013-03-17 00:06:04.558944,74.92.185.4,92.73.244.39,X,u,r,AA
+? trap.pis.webb.bin.webb.bin AAAA
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:06:04.558945,74.92.185.4,92.73.244.39,X,u,r,AA
+? trap.pis.webb.bin.webb.bin AAAA
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:06:04.559070,92.73.244.39,74.92.185.4,X,u,q,NA
+? trap.pis.webb.bin.pis.webb.bin AAAA
+<SEP>
+2013-03-17 00:06:04.559112,92.73.244.39,74.92.185.4,X,u,q,NA
+? trap.pis.webb.bin.pis.webb.bin AAAA
+<SEP>
+2013-03-17 00:06:04.559324,74.92.185.4,92.73.244.39,X,u,r,AA
+? trap.pis.webb.bin.pis.webb.bin AAAA
+$ pis.webb.bin SOA redacted
+<SEP>
+2013-03-17 00:06:04.559327,74.92.185.4,92.73.244.39,X,u,r,AA
+? trap.pis.webb.bin.pis.webb.bin AAAA
+$ pis.webb.bin SOA redacted
+<SEP>
+2013-03-17 00:06:04.559468,92.73.244.39,74.92.185.4,X,u,q,NA
+? trap.pis.webb.bin A
+<SEP>
+2013-03-17 00:06:04.559471,92.73.244.39,74.92.185.4,X,u,q,NA
+? trap.pis.webb.bin A
+<SEP>
+2013-03-17 00:06:04.559635,74.92.185.4,92.73.244.39,X,u,r,AA
+? trap.pis.webb.bin A
+! trap.pis.webb.bin A 74.92.185.62
+<SEP>
+2013-03-17 00:06:04.559638,74.92.185.4,92.73.244.39,X,u,r,AA
+? trap.pis.webb.bin A
+! trap.pis.webb.bin A 74.92.185.62
+<SEP>
+2013-03-17 00:06:04.564263,92.73.244.39,74.92.185.4,X,u,q,NA
+? multidimensional.nita.pis.webb.bin SRV
+<SEP>
+2013-03-17 00:06:04.564284,92.73.244.39,74.92.185.4,X,u,q,NA
+? multidimensional.nita.pis.webb.bin SRV
+<SEP>
+2013-03-17 00:06:04.564603,74.92.185.4,92.73.244.39,X,u,r,AA
+? multidimensional.nita.pis.webb.bin SRV
+$ pis.webb.bin SOA redacted
+<SEP>
+2013-03-17 00:06:04.564605,74.92.185.4,92.73.244.39,X,u,r,AA
+? multidimensional.nita.pis.webb.bin SRV
+$ pis.webb.bin SOA redacted
+<SEP>
+2013-03-17 00:06:04.565579,184.202.20.156,74.92.185.4,X,u,q,NA
+? yes.smelt.wad A
+<SEP>
+2013-03-17 00:06:04.566050,74.92.185.4,252.90.88.58,X,u,q,NA
+? yes.smelt.wad A
++  OPTS redacted
+<SEP>
+2013-03-17 00:06:04.571101,74.92.13.3,74.92.185.4,X,u,q,NA
+? distributing.webb.bin AAAA
+<SEP>
+2013-03-17 00:06:04.571323,74.92.185.4,74.92.13.3,X,u,r,AA
+? distributing.webb.bin AAAA
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:06:04.572271,74.92.13.3,74.92.185.4,X,u,q,NA
+? moonshots.distributing.webb.bin TEXT
+<SEP>
+2013-03-17 00:06:04.572991,74.92.185.4,74.92.13.3,X,u,r,AA
+? moonshots.distributing.webb.bin TEXT
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:06:04.575602,74.92.198.112,74.92.185.4,X,u,q,NA
+? sophisticate.webb.bin A
+<SEP>
+2013-03-17 00:06:04.576026,74.92.185.4,74.92.198.112,X,u,r,AA
+? sophisticate.webb.bin A
+! sophisticate.webb.bin CNAME ideograms.webb.bin
+! ideograms.webb.bin A 74.92.198.112
+<SEP>
+2013-03-17 00:06:04.579252,74.92.198.112,74.92.185.4,X,u,q,NA
+? .128.52.191.39.in-addr.arpa PTR
+<SEP>
+2013-03-17 00:06:04.579670,74.92.185.4,74.92.198.112,X,u,r,AA
+? .128.52.191.39.in-addr.arpa PTR
+! .128.52.191.39.in-addr.arpa PTR ideograms.webb.bin
+<SEP>
+2013-03-17 00:06:04.590098,74.92.80.130,74.92.185.4,X,u,q,NA
+? grandmother.babels.wad A
+<SEP>
+2013-03-17 00:06:04.590319,74.92.185.4,74.92.80.130,X,u,r,NA
+? grandmother.babels.wad A
+! grandmother.babels.wad A 66.169.173.134
+! grandmother.babels.wad A 66.169.173.22
+<SEP>
+2013-03-17 00:06:04.590324,74.92.80.130,74.92.185.4,X,u,q,NA
+? grandmother.babels.wad A
+<SEP>
+2013-03-17 00:06:04.590647,74.92.185.4,74.92.80.130,X,u,r,NA
+? grandmother.babels.wad A
+! grandmother.babels.wad A 66.169.173.22
+! grandmother.babels.wad A 66.169.173.134
+<SEP>
+2013-03-17 00:06:04.592125,74.92.29.179,74.92.185.4,X,u,q,NA
+? chairwoman.webb.bin AAAA
+<SEP>
+2013-03-17 00:06:04.592454,74.92.185.4,74.92.29.179,X,u,r,AA
+? chairwoman.webb.bin AAAA
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:06:04.595544,74.92.80.130,74.92.185.4,X,u,q,NA
+? drownings.webb.bin A
+<SEP>
+2013-03-17 00:06:04.595675,74.92.185.4,74.92.80.130,X,u,r,AA
+? drownings.webb.bin A
+! drownings.webb.bin CNAME a25.webb.bin
+! a25.webb.bin A 58.208.125.8
+<SEP>
+2013-03-17 00:06:04.596855,74.92.80.130,74.92.185.4,X,u,q,NA
+? drownings.webb.bin A
+<SEP>
+2013-03-17 00:06:04.596991,74.92.185.4,74.92.80.130,X,u,r,AA
+? drownings.webb.bin A
+! drownings.webb.bin CNAME a25.webb.bin
+! a25.webb.bin A 58.208.125.8
+<SEP>
+2013-03-17 00:06:04.604563,74.92.29.179,74.92.185.4,X,u,q,NA
+? chairwoman.webb.bin.webb.bin AAAA
+<SEP>
+2013-03-17 00:06:04.605102,74.92.185.4,74.92.29.179,X,u,r,AA
+? chairwoman.webb.bin.webb.bin AAAA
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:06:04.616809,74.92.243.123,74.92.185.4,X,u,q,NA
+? phonemes.webb.bin A
+<SEP>
+2013-03-17 00:06:04.617096,74.92.185.4,74.92.243.123,X,u,r,AA
+? phonemes.webb.bin A
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:06:04.617682,74.92.243.123,74.92.185.4,X,u,q,NA
+? phonemes A
+<SEP>
+2013-03-17 00:06:04.618018,74.92.185.4,74.92.243.123,X,u,r,NA
+? phonemes A
+$  SOA redacted
+<SEP>
+2013-03-17 00:06:04.618551,74.92.29.179,74.92.185.4,X,u,q,NA
+? chairwoman.webb.bin.ana.webb.bin AAAA
+<SEP>
+2013-03-17 00:06:04.619163,74.92.185.4,74.92.29.179,X,u,r,AA
+? chairwoman.webb.bin.ana.webb.bin AAAA
+$ ana.webb.bin SOA redacted
+<SEP>
+2013-03-17 00:06:04.619654,74.92.248.193,74.92.185.4,X,u,q,NA
+? acres.webb.bin A
+<SEP>
+2013-03-17 00:06:04.619658,74.92.248.193,74.92.185.4,X,u,q,NA
+? acres.webb.bin A
+<SEP>
+2013-03-17 00:06:04.620102,74.92.185.4,74.92.248.193,X,u,r,AA
+? acres.webb.bin A
+! acres.webb.bin A 74.92.164.107
+<SEP>
+2013-03-17 00:06:04.620107,74.92.185.4,74.92.248.193,X,u,r,AA
+? acres.webb.bin A
+! acres.webb.bin A 74.92.164.107
+<SEP>
+2013-03-17 00:06:04.620519,74.92.122.41,74.92.185.4,X,u,q,NA
+? compartmentalizes.webb.bin TEXT
+<SEP>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2013-03-17 00:07:03.782213,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.782567,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.782851,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.782926,252.90.88.59,74.92.185.4,X,u,r,NA
+? bs8hwjjam2vujjkheb2gdqih7txduof5zmc7vr87zsjq3pst2zdhc.flawed.fibrous.wad A
+! bs8hwjjam2vujjkheb2gdqih7txduof5zmc7vr87zsjq3pst2zdhc.flawed.fibrous.wad A 205.172.16.111
+$ fibrous.wad NS ass.glazes.wad
+$ fibrous.wad NS leg.glazes.wad
+$ fibrous.wad NS sat.glazes.wad
+$ fibrous.wad NS pus.glazes.wad
++  OPTS redacted
+<SEP>
+2013-03-17 00:07:03.783497,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.783658,74.92.185.4,74.92.175.32,X,u,r,NA
+? bs8hwjjam2vujjkheb2gdqih7txduof5zmc7vr87zsjq3pst2zdhc.flawed.fibrous.wad A
+! bs8hwjjam2vujjkheb2gdqih7txduof5zmc7vr87zsjq3pst2zdhc.flawed.fibrous.wad A 205.172.16.111
+<SEP>
+2013-03-17 00:07:03.783661,74.92.185.4,74.92.175.32,X,u,r,NA
+? bs8hwjjam2vujjkheb2gdqih7txduof5zmc7vr87zsjq3pst2zdhc.flawed.fibrous.wad A
+! bs8hwjjam2vujjkheb2gdqih7txduof5zmc7vr87zsjq3pst2zdhc.flawed.fibrous.wad A 205.172.16.111
+<SEP>
+2013-03-17 00:07:03.784801,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.784919,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.785195,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.785838,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.785863,74.92.175.32,74.92.185.4,X,u,q,NA
+? bs8h3g4hk14sjod7mrd6rqxsod2aleq-7hffop6v6ht64owu44pxw.flawed.fibrous.wad A
+<SEP>
+2013-03-17 00:07:03.786265,74.92.185.4,252.90.88.59,X,u,q,NA
+? bs8h3g4hk14sjod7mrd6rqxsod2aleq-7hffop6v6ht64owu44pxw.flawed.fibrous.wad A
++  OPTS redacted
+<SEP>
+2013-03-17 00:07:03.787734,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.787904,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.788206,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.788835,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.790100,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.790255,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.790498,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.791106,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.793164,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.793522,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.793838,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.794436,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.795667,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.795925,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.796208,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.796835,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.798921,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.799263,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.799590,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.800170,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.801259,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.801615,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.801889,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.802502,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.803979,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.804281,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.804538,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.805172,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.806256,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.806589,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.806863,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.807499,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.809220,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.809591,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.809883,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.810515,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.811643,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.811919,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.812020,74.92.63.52,74.92.185.4,X,u,q,NA
+? tired.vets.mug.unions.pis.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.812025,74.92.63.52,74.92.185.4,X,u,q,NA
+? tired.vets.mug.unions.pis.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.812193,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.812261,74.92.185.4,74.92.63.52,X,u,r,AA
+? tired.vets.mug.unions.pis.webb.bin SRV
+! tired.vets.mug.unions.pis.webb.bin SRV redacted
+<SEP>
+2013-03-17 00:07:03.812263,74.92.185.4,74.92.63.52,X,u,r,AA
+? tired.vets.mug.unions.pis.webb.bin SRV
+! tired.vets.mug.unions.pis.webb.bin SRV redacted
+<SEP>
+2013-03-17 00:07:03.812777,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.814457,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.814859,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.815137,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.815762,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.816966,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.817259,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.817564,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.818031,74.92.251.22,74.92.185.4,X,u,q,NA
+? plot.webb.bin MX
+<SEP>
+2013-03-17 00:07:03.818174,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.818267,74.92.185.4,74.92.251.22,X,u,r,AA
+? plot.webb.bin MX
+! plot.webb.bin MX 10,dementedly.webb.bin
+! plot.webb.bin MX 10,woodenness.webb.bin
+<SEP>
+2013-03-17 00:07:03.818855,74.92.251.22,74.92.185.4,X,u,q,NA
+? woodenness.webb.bin A
+<SEP>
+2013-03-17 00:07:03.819242,74.92.185.4,74.92.251.22,X,u,r,AA
+? woodenness.webb.bin A
+! woodenness.webb.bin A 74.92.185.101
+<SEP>
+2013-03-17 00:07:03.819822,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.820249,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.820490,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.821110,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.822285,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.822594,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.822895,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.823501,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.824902,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.825257,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.825575,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.826167,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.827465,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.827573,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.827883,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.828508,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.830339,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.830592,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.830945,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.831500,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.832747,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.832918,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.833214,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.833831,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.835417,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.835593,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.835809,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.836431,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.837728,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.837852,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.838263,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.838763,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.840899,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.841261,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.841628,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.842166,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.843222,74.92.92.113,74.92.185.4,X,u,q,NA
+? acres.webb.bin A
+<SEP>
+2013-03-17 00:07:03.843483,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.843584,74.92.185.4,74.92.92.113,X,u,r,AA
+? acres.webb.bin A
+! acres.webb.bin A 74.92.164.107
+<SEP>
+2013-03-17 00:07:03.843589,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.843917,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.844502,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.844720,74.92.92.113,74.92.185.4,X,u,q,NA
+? acres.webb.bin AAAA
+<SEP>
+2013-03-17 00:07:03.844934,74.92.185.4,74.92.92.113,X,u,r,AA
+? acres.webb.bin AAAA
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.846209,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.846589,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.846935,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.847478,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.848430,74.92.251.198,74.92.185.4,X,u,q,NA
+? aor8g6exl5vakrmmm.detention.shortened.amvt8o A
+<SEP>
+2013-03-17 00:07:03.848575,74.92.185.4,74.92.251.198,X,u,r,NA
+? aor8g6exl5vakrmmm.detention.shortened.amvt8o A
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.848679,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.848856,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.849137,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.849764,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.851460,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.851854,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.852155,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.852805,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.854035,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.854259,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.854620,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.855171,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.857262,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.857585,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.857891,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.858613,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.859762,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
+2013-03-17 00:07:03.859914,74.92.185.4,74.92.169.13,X,u,r,NA
+? gromyko.nita.bloom SRV
+$  SOA redacted
+<SEP>
+2013-03-17 00:07:03.860210,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom.webb.bin SRV
+<SEP>
+2013-03-17 00:07:03.861169,74.92.185.4,74.92.169.13,X,u,r,AA
+? gromyko.nita.bloom.webb.bin SRV
+$ webb.bin SOA redacted
+<SEP>
+2013-03-17 00:07:03.862292,58.229.234.80,74.92.251.88,X,u,q,NA
+?  A
+<SEP>
+2013-03-17 00:07:03.862363,58.229.234.80,74.92.251.88,X,u,q,NA
+?  A
+<SEP>
+2013-03-17 00:07:03.863066,74.92.169.13,74.92.185.4,X,u,q,NA
+? gromyko.nita.bloom SRV
+<SEP>
