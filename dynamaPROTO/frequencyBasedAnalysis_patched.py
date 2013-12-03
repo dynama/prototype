@@ -21,7 +21,6 @@ def analyzeTraffic():
     try:
 	sketchySourceIP = result[0]
  	for item in sketchySourceIP:
-		print item
 		theQuery3 = ("SELECT COUNT(*) FROM dnsPackets WHERE src = '"+item+"'")
 		cursor.execute(theQuery3)
 		result3 = cursor.fetchone()
@@ -34,12 +33,12 @@ def analyzeTraffic():
    	 	print firstSum
 		number = (secondSum/float(firstSum))
 		print number
-		if number > fa:
-  		      	fprob = 4
-		elif number > fb:
-			fprob = .3
-		elif number > fc:
-			fprob = .4
+		if number >= fa and number < fb:
+  		      	fprob = 2
+		elif number >= fb and number < fc:
+			fprob = 3
+		elif number >= fc:
+			fprob = 4
 		else:
  		       	fprob = 0
  	      	sprob = fprob

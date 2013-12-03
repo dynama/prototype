@@ -51,7 +51,7 @@ def initialize_database():
         "  `sqlID` int(11) NOT NULL AUTO_INCREMENT,"
         "  `domain` TEXT NOT NULL,"
         "  `ip` TEXT NOT NULL,"
-        "  `src` TEXT NOT NULL,"
+        "  `src` int(2) NOT NULL,"
         "  `level` TEXT NOT NULL,"
         "  PRIMARY KEY (`sqlID`)"
         ") ENGINE=InnoDB")
@@ -77,7 +77,7 @@ def initialize_database():
 	"  PRIMARY KEY (`sqlID`)"
 	") ENGINE=InnoDB")
     TABLES['threatProb'] = (
-        " CREATE TABLE `malSites` ("
+        " CREATE TABLE `threatProb` ("
 	"  `sqlID` int(11) NOT NULL AUTO_INCREMENT,"
 	"  `domain` TEXT NOT NULL,"
 	" `ip` TEXT NOT NULL,"
@@ -202,19 +202,19 @@ def add_mal_hosts(cnx, data):
     cursor.execute(addMal, data)
     cnx.commit()
 
-def add_mal_sites(cnx, data, level):
+def add_mal_sites(cnx, data):
     cursor = cnx.cursor()
     addMal = ("INSERT INTO malSites "
-	 	  "(domain, src, ip), level "
-		  "VALUES (%s, %s,%s,"+level+")")
-    cursor.execute(addMal, data, level)
+	 	  "(domain, src, ip, level) "
+		  "VALUES (%s, %s, %s, %s)")
+    cursor.execute(addMal, data)
     cnx.commit()
-def add_prob(cnx, data, probability):
-    cursor = cnx.cusror()
+def add_prob(cnx, data):
+    cursor = cnx.cursor()
     addProb = ("INSERT INTO threatProb "
-                   "(sqlID, domain, src, ip), level "
-                   "VALUES (%s, %s, %s,"+level+")")
-    cursor.execute(addProb, data, level)
+                   "(sqlID, domain, ip, src, prob) "
+                   "VALUES (%s, %s, %s, %s, %s)")
+    cursor.execute(addProb, data)
     cnx.commit()
 
 def add_src_data(cnx, data):

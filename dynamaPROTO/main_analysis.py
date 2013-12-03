@@ -4,6 +4,7 @@ from mySQL import truncate_table, get_cnx, get_data, update_mal_hosts
 from dnsBasedAnalysis import num_DNS_IP
 from nameBasedAnalysis import percentDomainNum
 from frequencyBasedAnalysis_patched import analyzeTraffic
+from probability import getprob
 import threading, Queue
 
 class main_analysis(threading.Thread):
@@ -23,7 +24,7 @@ class main_analysis(threading.Thread):
 		try:
 		#iface = checkInterface()
 			#self.myDumper = dumper(self.check_interface(), self.analysisInterval, self.commiunicationQueue)
-			self.myDumper = dumper("eth0", self.analysisInterval, self.commiunicationQueue)
+			self.myDumper = dumper("eth1", self.analysisInterval, self.commiunicationQueue)
 			self.myDumper.start()
 			#time.sleep(5)
 			self.commiunicationQueue.put('COMPLETE')
@@ -50,7 +51,8 @@ class main_analysis(threading.Thread):
 			analysisModulesRun += 1
 			self.commiunicationQueue.put('Done.')
 			self.commiunicationQueue.put('Checking for suspicious hosts...')
-			analyzeTraffic(currentDNSTable)
+			analyzeTraffic()
+			getprob()
 			analysisModulesRun += 1
 			self.commiunicationQueue.put('Done.')
 			self.commiunicationQueue.put('Checking for hosts browsing suspicious domains...')

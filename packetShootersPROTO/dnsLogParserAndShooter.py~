@@ -3,7 +3,7 @@
 import os, time,re
 from scapy.all import *
 
-logFile = r"/home/dynama/patchedCode/packetShooters/2013-03-17.shortened.txt"
+logFile = r"/home/dynama/prototype/packetShootersPROTO/2013-03-17.shortened.txt"
 f = open(logFile, "r")
 dnsLog=f.read()
 f.close()

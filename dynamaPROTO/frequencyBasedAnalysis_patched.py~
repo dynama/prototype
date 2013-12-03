@@ -34,12 +34,12 @@ def analyzeTraffic():
    	 	print firstSum
 		number = (secondSum/float(firstSum))
 		print number
-		if number > fa:
-  		      	fprob = .2
-		elif number > fb:
-			fprob = .3
-		elif number > fc:
-			fprob = .4
+		if number >= fa and number < fb:
+  		      	fprob = 2
+		elif number >= fb and number < fc:
+			fprob = 3
+		elif number >= fc:
+			fprob = 4
 		else:
  		       	fprob = 0
  	      	sprob = fprob

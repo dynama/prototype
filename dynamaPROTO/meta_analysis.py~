@@ -60,7 +60,6 @@ def main():
 		print 'Checking for multiple return IPs...',
 		num_DNS_IP()
 		testsRun += 1
-		getprob()
 		print ' Done.'
 		if testsRun == 0:
 			print 'No analysis run'

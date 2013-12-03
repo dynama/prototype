@@ -27,7 +27,7 @@ def networkAdd():
     return network_address
 
 def tVars():
-    ta = .5
-    tb = .7
-    tc = .9
+    ta = 5
+    tb = 7
+    tc = 9
     return ta, tb, tc

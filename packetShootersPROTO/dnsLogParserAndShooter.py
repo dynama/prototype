@@ -3,7 +3,7 @@
 import os, time,re
 from scapy.all import *
 
-logFile = r"/Desktop/dynama/patchedCode/packetShooters/2013-03-17.shortened.txt"
+logFile = r"/home/dynama/prototype/packetShootersPROTO/2013-03-17.shortened.txt"
 f = open(logFile, "r")
 dnsLog=f.read()
 f.close()
@@ -78,10 +78,10 @@ for i in dnsQueries:
     print i[0]
     print i[1]    
     packet = IP(dst='8.8.8.8')/UDP()/DNS(rd =1,qd=DNSQR(qname=i[0],qtype=i[1]))
-    IP(dst='8.8.8.8')/UDP()/DNS(rd=1,qd=DNSQR(qname="www.TooManyNumbers987654321987654321.com"))
+    packet2 = IP(dst='8.8.8.8')/UDP()/DNS(rd=1,qd=DNSQR(qname="www.TooManyNumbers987654321987654321.com"))
     # structure & qtype => theitgeekchronicles.files.wordpress.com/2012/05/scapyguide1.pdf‎
     
-    send(packet)
+    send(packet2)
 
 
 

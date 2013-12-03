@@ -43,11 +43,10 @@ def getprob():
         	else:
             		probability = 'no'
 		tempList = [item[0],item[1],item[2], item[3],probability]
-		if probability != 'no':
-			try:
-				add_prob(cnx,tempList)
-			except:
-				pass
+		try:
+			add_prob(cnx,tempList)
+		except:
+			pass
     malDataWhole = get_data(cnx, "SELECT * FROM malSites")
     for item2 in malDataWhole:
 	sqlID2 = str(item2[0])
@@ -63,11 +62,10 @@ def getprob():
         	else:
             		probability = 'no'
 		tempList = [item2[0],item2[1],item2[2], item2[3],probability]
-		if probability != 'no':
-			try:
-				add_prob(cnx,tempList)
-			except:
-				pass
+		try:
+			add_prob(cnx,tempList)
+		except:
+			pass
 	
 
     #check for equivalent entry in malSites
