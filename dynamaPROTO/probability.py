@@ -19,12 +19,12 @@ def getprob():
 	if len(malData) != 0:
 		malThreat = int(malData[0][4])
 		totalThreat = malThreat + sketchThreat
-		if totalThreat >= ta and totalThreat < tb:
-            		probability = 'low'
-       		elif totalThreat >= tb and totalThreat < tc:
-            		probability = 'medium'
-        	elif totalThreat >= tc:
+		if totalThreat > tc :
             		probability = 'high'
+       		elif totalThreat > tb:
+            		probability = 'medium'
+        	elif totalThreat > ta:
+            		probability = 'low'
         	else:
             		probability = 'no'
 		tempList = [item[0],item[1],item[2], item[3],probability]
@@ -34,7 +34,9 @@ def getprob():
 			except:
 				pass
 	elif len(malData) == 0:
-		if sketchThreat >= ta and totalThreat < tb:
+		if sketchThreat < ta:
+			probability = 'no'		
+		elif sketchThreat >= ta and totalThreat < tb:
             		probability = 'low'
        		elif sketchThreat >= tb and totalThreat < tc:
             		probability = 'medium'
@@ -54,7 +56,9 @@ def getprob():
 	malSoleThreat = int(item2[4])
 	sketchDataPartial = get_data(cnx, "SELECT * FROM sketchySources WHERE sqlID = '"+sqlID2+"'")
 	if len(sketchDataPartial) == 0:
-		if malSoleThreat >= ta and totalThreat < tb:
+		if malSoleThreat < ta:
+			probability = 'no'
+		elif malSoleThreat >= ta and totalThreat < tb:
             		probability = 'low'
        		elif malSoleThreat >= tb and totalThreat < tc:
             		probability = 'medium'

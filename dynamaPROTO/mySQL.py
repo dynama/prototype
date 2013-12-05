@@ -51,12 +51,12 @@ def initialize_database():
         "  `sqlID` int(11) NOT NULL AUTO_INCREMENT,"
         "  `domain` TEXT NOT NULL,"
         "  `ip` TEXT NOT NULL,"
-        "  `src` int(2) NOT NULL,"
+        "  `src` TEXT NOT NULL,"
         "  `level` TEXT NOT NULL,"
         "  PRIMARY KEY (`sqlID`)"
         ") ENGINE=InnoDB")
     TABLES['sourceTable'] = (
-    "CREATE TABLE `sketchyDestinations` ("
+    "CREATE TABLE `sourceTable` ("
         "  `sqlID` int(11) NOT NULL AUTO_INCREMENT,"
         "  `source` TEXT NOT NULL,"
         "  PRIMARY KEY (`sqlID`)"
@@ -160,7 +160,6 @@ def initialize_database():
     return cursor, cnx
 
 
-
 def check_duplicate(cnx,table,domain_id,name):
     cursor = cnx.cursor()
     check_dup = ("SELECT count(*) AS dup FROM %s WHERE %s = %s")
@@ -258,21 +257,19 @@ def add_multipleReturnIP_data(cnx,data):
     cnx.commit()
 
 
-def add_sketch_sources(cnx, data, level):
+def add_sketch_sources(cnx, data):
     cursor = cnx.cursor()
     add_sketch_source = ("INSERT INTO sketchySources "
 				"(sqlID, domain, ip, src, level) "
 				"VALUES (%s, %s, %s, %s, %s)")
-#                            "(sqlID, domain, ip, src, level)"
-#                            "VALUES (%s, %s, %s, %s,"+level+")")
     cursor.execute(add_sketch_source, data)
     cnx.commit()
 
-def add_sketchy_destinations(cnx, data):
+def add_source_table(cnx, data):
     cursor = cnx.cursor()
-    add_sketch_source = ("INSERT INTO sourceTable"
-                            "(source, numberOfTimes)"
-                            "VALUES (%s, %s)")
+    add_sketch_source = ("INSERT INTO sourceTable "
+			"(datetime, src, dst, dnsID, domain, ip) "
+                   	"VALUES (%s, %s, %s, %s, %s, %s)")
     cursor.execute(add_sketch_source, data)
     cnx.commit
 

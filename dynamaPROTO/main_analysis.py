@@ -24,7 +24,7 @@ class main_analysis(threading.Thread):
 		try:
 		#iface = checkInterface()
 			#self.myDumper = dumper(self.check_interface(), self.analysisInterval, self.commiunicationQueue)
-			self.myDumper = dumper("eth1", self.analysisInterval, self.commiunicationQueue)
+			self.myDumper = dumper("eth0", self.analysisInterval, self.commiunicationQueue)
 			self.myDumper.start()
 			#time.sleep(5)
 			self.commiunicationQueue.put('COMPLETE')
@@ -43,16 +43,16 @@ class main_analysis(threading.Thread):
 		while not self.stopAnalysis.isSet():
 			currentDNSTable = self.myDumper.get_analysis_table()
 			self.commiunicationQueue.put('Checking for multiple return IPs...')
-			num_DNS_IP(currentDNSTable)
+#			num_DNS_IP(currentDNSTable)
 			analysisModulesRun += 1
 			self.commiunicationQueue.put('Done.')
 			self.commiunicationQueue.put('Checking for suspicious domains...')
-			percentDomainNum(currentDNSTable)
+			#percentDomainNum(currentDNSTable)
 			analysisModulesRun += 1
 			self.commiunicationQueue.put('Done.')
 			self.commiunicationQueue.put('Checking for suspicious hosts...')
-			analyzeTraffic()
-			getprob()
+			#analyzeTraffic()
+			#getprob()
 			analysisModulesRun += 1
 			self.commiunicationQueue.put('Done.')
 			self.commiunicationQueue.put('Checking for hosts browsing suspicious domains...')
