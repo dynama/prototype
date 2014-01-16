@@ -4,9 +4,12 @@ from mySQL import get_data, add_mal_sites, get_cnx, check_duplicate, add_prob
 import string
 import re
 import config 
+#The purpose of this module is to assign a threat probability to analyzed dns packets that were determined to be potential malware.
 
+#The below variables are the thresholds from the convig.py file that the administrator can edit to sort the results into a threat probability of Low, Medium, or High.
 ta, tb, tc = config.tVars()
 
+#
 def getprob():
     global ta, tb, tc
     cnx = get_cnx()

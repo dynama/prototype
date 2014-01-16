@@ -16,9 +16,9 @@ def freqVars():
     #variable for flushing the source table
     flush = 50
     #3 thresholds for percent a single source requests a domain name other than ours
-    fa = .2
-    fb = .5
-    fc = .7
+    fa = 2
+    fb = 5
+    fc = 7
     return flush, fa, fb, fc
 
 #this will define what address our dns should resolve to
@@ -26,6 +26,7 @@ def networkAdd():
     network_address = str("10.20.30.40")
     return network_address
 
+#thresholds 
 def tVars():
     ta = 1
     tb = 7

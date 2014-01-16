@@ -1,9 +1,11 @@
 import mysql.connector
 from mysql.connector import errorcode
 
+#This module creates the database that the information of the DNS Packets is stored in.
+#It also creates the funstions that are used to insert data into the MtSQL database.
 # Mostly from: http://dev.mysql.com/doc/connector-python/en/myconnpy_example_ddl.html
 
-
+#This function creates the database from the dynama program. It sets up the different tables, and establishes the connection, username/password for the program to communicate to the table to insert/call data.
 def initialize_database():	
     cnx = mysql.connector.connect(user='root', passwd='password')
     cursor = cnx.cursor()
@@ -158,7 +160,8 @@ def initialize_database():
             print("OK")
 
     return cursor, cnx
-initialize_database()
+
+
 def check_duplicate(cnx,table,domain_id,name):
     cursor = cnx.cursor()
     check_dup = ("SELECT count(*) AS dup FROM %s WHERE %s = %s")

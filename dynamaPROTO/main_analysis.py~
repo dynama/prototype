@@ -7,6 +7,8 @@ from frequencyBasedAnalysis_patched import analyzeTraffic
 from probability import getprob
 import threading, Queue
 
+#This module serves as the main module for dynama. It calls all of the different analyzing modules for the program. 
+
 class main_analysis(threading.Thread):
 	""" This thread will run all the analysis every
 		analysisInterval seconds after starting the 
@@ -43,16 +45,16 @@ class main_analysis(threading.Thread):
 		while not self.stopAnalysis.isSet():
 			currentDNSTable = self.myDumper.get_analysis_table()
 			self.commiunicationQueue.put('Checking for multiple return IPs...')
-			num_DNS_IP(currentDNSTable)
+#			num_DNS_IP(currentDNSTable)
 			analysisModulesRun += 1
 			self.commiunicationQueue.put('Done.')
 			self.commiunicationQueue.put('Checking for suspicious domains...')
-			percentDomainNum(currentDNSTable)
+			#percentDomainNum(currentDNSTable)
 			analysisModulesRun += 1
 			self.commiunicationQueue.put('Done.')
 			self.commiunicationQueue.put('Checking for suspicious hosts...')
-			analyzeTraffic()
-			getprob()
+			#analyzeTraffic()
+			#getprob()
 			analysisModulesRun += 1
 			self.commiunicationQueue.put('Done.')
 			self.commiunicationQueue.put('Checking for hosts browsing suspicious domains...')
