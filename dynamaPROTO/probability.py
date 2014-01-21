@@ -4,12 +4,20 @@ from mySQL import get_data, add_mal_sites, get_cnx, check_duplicate, add_prob
 import string
 import re
 import config 
-#The purpose of this module is to assign a threat probability to analyzed dns packets that were determined to be potential malware.
+#The purpose of this module is to assign a threat probability to analyzed 
+#dns packets that were determined to be potential malware.
 
-#The below variables are the thresholds from the convig.py file that the administrator can edit to sort the results into a threat probability of Low, Medium, or High.
+#The below variables are the thresholds from convig.py that the administrator
+#can edit to sort the results into a threat probability of Low, Medium, or High.
+
 ta, tb, tc = config.tVars()
 
-#
+#The below function looks at flagged packets in sketchySources (found using frequencyBasedAnalysis_patched.py). 
+#It finds the sqlID for the packet and then uses that ID to find the same packets 
+#entry in the malsites table (found using nameBasedAnalysis.py). 
+#It then finds the totalThreat by adding the two threat values, one found in each tables.
+#Then, by comparing the total to the thresholds from config.py, it assigns a threat probability
+#of low, medium, or high, or no.
 def getprob():
     global ta, tb, tc
     cnx = get_cnx()
@@ -36,6 +44,10 @@ def getprob():
 				add_prob(cnx,tempList)
 			except:
 				pass
+	#Look at again.
+	#Looks at the threat for the packet in sketchySources if it does not have a matching 
+	#sqlID entry in malSites. It then compares the sketchThreat thresholds and compares
+	#them to the total threat thresholds in order to assign a threat probability.
 	elif len(malData) == 0:
 		if sketchThreat < ta:
 			probability = 'no'		
@@ -53,6 +65,7 @@ def getprob():
 				add_prob(cnx,tempList)
 			except:
 				pass
+    #
     malDataWhole = get_data(cnx, "SELECT * FROM malSites")
     for item2 in malDataWhole:
 	sqlID2 = str(item2[0])
