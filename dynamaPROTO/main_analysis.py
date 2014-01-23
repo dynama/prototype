@@ -7,6 +7,8 @@ from frequencyBasedAnalysis_patched import analyzeTraffic
 from probability import getprob
 import threading, Queue
 
+#This module serves as the main module for dynama. It calls all of the different analyzing modules for the program. 
+
 class main_analysis(threading.Thread):
 	""" This thread will run all the analysis every
 		analysisInterval seconds after starting the 

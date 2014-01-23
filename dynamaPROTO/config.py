@@ -26,6 +26,8 @@ def networkAdd():
     network_address = str("10.20.30.40")
     return network_address
 
+#thresholds to determine what the threat level for the DNS packet is once analysis is done, 
+#based off of the above thresholds and the analysis module's results.
 def tVars():
     ta = 1
     tb = 7

@@ -1,20 +1,24 @@
+
+
+
+
 import mysql.connector
 from mysql.connector import errorcode
 from mySQL import get_data, add_mal_sites, get_cnx, check_duplicate
 import string
 import re
 
-#These features are based on the domain name
+#This module focuses on the domain name to see if it is potentially malware.
 
 
-#Percentage of numerical character in domain name
+#Percentage of numerical character in domain name.
 def percentDomainNum(dnsPackets):
 	print "running name based analysis"
 	cnx = get_cnx()
-	data = get_data(cnx, "SELECT DISTINCT sqlID, domain, dst, ip FROM dnsPackets") 
+	data = get_data(cnx, "SELECT DISTINCT sqlID, domain, dst, ip FROM dnsPackets")
 
 	for d in data:
-		#checks to see how many numbers are in the domain name
+		#checks to see how many numbers are in the domain name.
 		if "in-addr" in d[1]:
 			pass
 		else:

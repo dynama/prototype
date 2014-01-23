@@ -1,3 +1,7 @@
+
+
+
+
 import mysql.connector
 from mysql.connector import errorcode
 from mySQL import get_data, add_mal_sites, get_cnx, check_duplicate
@@ -11,7 +15,11 @@ import re
 def percentDomainNum(dnsPackets):
 	print "running name based analysis"
 	cnx = get_cnx()
+<<<<<<< HEAD
 	data = get_data(cnx, "SELECT DISTINCT sqlID, domain, dst, ip FROM dnsPackets") 
+=======
+	data = get_data(cnx, "SELECT DISTINCT sqlID, domain, dst, ip FROM dnsPackets")
+>>>>>>> fd6fa56b6613a38b66a5ec70f5255e8ab8693faf
 
 	for d in data:
 		#checks to see how many numbers are in the domain name

@@ -2,10 +2,10 @@ import mysql.connector
 from mysql.connector import errorcode
 from mySQL import get_data, get_cnx#, add_sketchy_sources, add_sketchy_destinations
 import sys, re
-#This module is based off of the frequency of the packet to see if it
-#is potentially malware.
+#These features are based on frequency of DNS traffic
 
-#This function looks at the percent of DNS requests per source.
+
+
 def cross_reference_src_frequency(dnsPacketsVar):
     def frequency_src_IP(dnsPacketsVar):
         cnx = get_cnx()
