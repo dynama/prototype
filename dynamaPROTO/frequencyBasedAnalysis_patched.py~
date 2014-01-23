@@ -1,6 +1,6 @@
 import mysql
 import mysql.connector
-from mysql.connector import errorcode
+from mysql.connector import errorcodeo
 from mySQL import get_data, get_cnx, add_mal_sites, check_duplicate, add_sketch_sources, add_source_table
 import sys, re, string
 import config
@@ -13,7 +13,7 @@ def analyzeTraffic():
     global network_address
     cnx = mysql.connector.connect(user='root', passwd='password', host = '127.0.0.1', database = 'dynama')
     cursor = cnx.cursor()
-    pushBadSourcesQuery = ("SELECT * From dnsPackets WHERE dst!= '"+network_address+"'")
+    pushBadSourcesQuery = ("SELECT sqlID, datetime, src, dst, dnsID, domain, ip From dnsPackets WHERE dst!= '"+network_address+"'")
     cursor.execute(pushBadSourcesQuery)
     sourcesQueryResult = cursor.fetchall()
     for packet in sourcesQueryResult:

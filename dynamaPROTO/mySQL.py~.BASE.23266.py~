@@ -1,13 +1,9 @@
 import mysql.connector
 from mysql.connector import errorcode
 
-#This module creates the database that the information of the DNS Packets is stored in.
-#It also creates the funstions that are used to insert data into the MtSQL database.
 # Mostly from: http://dev.mysql.com/doc/connector-python/en/myconnpy_example_ddl.html
 
-#This function creates the database from the dynama program. It sets up the 
-#different tables, and establishes the connection, username/password for the 
-#program to communicate to the table to insert/call data.
+
 def initialize_database():	
     cnx = mysql.connector.connect(user='root', passwd='password')
     cursor = cnx.cursor()
@@ -61,13 +57,8 @@ def initialize_database():
         ") ENGINE=InnoDB")
     TABLES['sourceTable'] = (
     "CREATE TABLE `sourceTable` ("
-       "  `sqlID` int(11) NOT NULL AUTO_INCREMENT,"
-        "  `datetime` TEXT NOT NULL,"
-        "  `src` TEXT NOT NULL,"
-        "  `dst` TEXT NOT NULL,"
-        "  `dnsID` TEXT NOT NULL,"
-        "  `domain` TEXT NOT NULL,"
-        "  `ip` TEXT NOT NULL,"
+        "  `sqlID` int(11) NOT NULL AUTO_INCREMENT,"
+        "  `source` TEXT NOT NULL,"
         "  PRIMARY KEY (`sqlID`)"
         ") ENGINE=InnoDB")
     TABLES['sketchyByDomain'] = (
@@ -126,11 +117,11 @@ def initialize_database():
 	"`src` VARCHAR(15) NOT NULL,"
 	"`high_number_count_in_name` TEXT NOT NULL,"
 	"`high_amount_of_ips_per_domain` TEXT NOT NULL,"
-    	"`sketchy_src` TEXT NOT NULL,"
-   	 "`sketchy_browse` TEXT NOT NULL,"
+    "`sketchy_src` TEXT NOT NULL,"
+    "`sketchy_browse` TEXT NOT NULL,"
 	"`total_number_of_flags` INT NOT NULL,"
 	"PRIMARY KEY (`sqlID`),"
-    	"UNIQUE KEY `UNIQ_SRC` (`src`)"
+    "UNIQUE KEY `UNIQ_SRC` (`src`)"
 	") ENGINE=InnoDB")
     
 
@@ -167,7 +158,6 @@ def initialize_database():
             print("OK")
 
     return cursor, cnx
-
 initialize_database()
 def check_duplicate(cnx,table,domain_id,name):
     cursor = cnx.cursor()
@@ -179,11 +169,6 @@ def check_duplicate(cnx,table,domain_id,name):
 
 
 
-#The below functions are set up in this module for the use of the rest 
-#of the modules of dynama. They serve to allow the other modules to insert 
-#or pull data to/from the database that is captured by dynama. This allows 
-#the modules the ability to analyze the data collected in the database to 
-#help determine if the DNS packet is potentially malware.
 
 #Returns a list of Tuples from the given SQL Statement
 def get_data(cnx, sqlString):
@@ -281,11 +266,15 @@ def add_sketch_sources(cnx, data):
 
 def add_source_table(cnx, data):
     cursor = cnx.cursor()
-    add_source = ("INSERT INTO sourceTable "
-			"(sqlID, datetime, src, dst, dnsID, domain, ip) "
-                   	"VALUES (%s, %s, %s, %s, %s, %s, %s)")
-    cursor.execute(add_source, data)
+    add_sketch_source = ("INSERT INTO sourceTable "
+			"(datetime, src, dst, dnsID, domain, ip) "
+                   	"VALUES (%s, %s, %s, %s, %s, %s)")
+    cursor.execute(add_sketch_source, data)
     cnx.commit
+
+
+
+
 
 
 def add_data(cnx, data):

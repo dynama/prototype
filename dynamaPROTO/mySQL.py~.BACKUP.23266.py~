@@ -126,11 +126,11 @@ def initialize_database():
 	"`src` VARCHAR(15) NOT NULL,"
 	"`high_number_count_in_name` TEXT NOT NULL,"
 	"`high_amount_of_ips_per_domain` TEXT NOT NULL,"
-    	"`sketchy_src` TEXT NOT NULL,"
-   	 "`sketchy_browse` TEXT NOT NULL,"
+    "`sketchy_src` TEXT NOT NULL,"
+    "`sketchy_browse` TEXT NOT NULL,"
 	"`total_number_of_flags` INT NOT NULL,"
 	"PRIMARY KEY (`sqlID`),"
-    	"UNIQUE KEY `UNIQ_SRC` (`src`)"
+    "UNIQUE KEY `UNIQ_SRC` (`src`)"
 	") ENGINE=InnoDB")
     
 
@@ -168,7 +168,11 @@ def initialize_database():
 
     return cursor, cnx
 
-initialize_database()
+<<<<<<< HEAD
+#initialize_database()
+=======
+
+>>>>>>> fd6fa56b6613a38b66a5ec70f5255e8ab8693faf
 def check_duplicate(cnx,table,domain_id,name):
     cursor = cnx.cursor()
     check_dup = ("SELECT count(*) AS dup FROM %s WHERE %s = %s")
@@ -179,12 +183,7 @@ def check_duplicate(cnx,table,domain_id,name):
 
 
 
-#The below functions are set up in this module for the use of the rest 
-#of the modules of dynama. They serve to allow the other modules to insert 
-#or pull data to/from the database that is captured by dynama. This allows 
-#the modules the ability to analyze the data collected in the database to 
-#help determine if the DNS packet is potentially malware.
-
+#The below functions are set up in this module for the use of the rest of the modules of dynama. They serve to allow the other modules to insert or pull data to/from the database that is captured by dynama. This allows the modules the ability to analyze the data collected in the database to help determine if the DNS packet is potentially malware.
 #Returns a list of Tuples from the given SQL Statement
 def get_data(cnx, sqlString):
     cursor = cnx.cursor()
