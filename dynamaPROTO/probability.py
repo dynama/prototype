@@ -65,7 +65,9 @@ def getprob():
 				add_prob(cnx,tempList)
 			except:
 				pass
-    #
+    #This part of the function looks at malSites and then tries to find a match in sketchySources, in case
+    #nameBasedAnlaysis.py found something that frequencyBasedAnlaysis.py did not.
+
     malDataWhole = get_data(cnx, "SELECT * FROM malSites")
     for item2 in malDataWhole:
 	sqlID2 = str(item2[0])
