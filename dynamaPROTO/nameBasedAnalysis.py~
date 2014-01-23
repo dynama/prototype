@@ -12,8 +12,7 @@ def percentDomainNum(dnsPackets):
 	print "running name based analysis"
 	cnx = get_cnx()
 	data = get_data(cnx, "SELECT DISTINCT sqlID, domain, dst, ip FROM dnsPackets") 
-#AS distinctDNSPackets \
-#			     WHERE NOT EXISTS (SELECT sqlID, domain,src,ip FROM malSites where malSites.domain = distinctDNSPackets.domain)")
+
 	for d in data:
 		#checks to see how many numbers are in the domain name
 		if "in-addr" in d[1]:
@@ -23,7 +22,6 @@ def percentDomainNum(dnsPackets):
 			if len( str(d[1]).translate(None,string.ascii_letters).translate(None,string.punctuation)) >= 4 and len( str(d[1]).translate(None,string.ascii_letters).translate(None,string.punctuation)) < 6:
 				threatLevel = 3
 				tempList = [d[0],d[1],d[2],d[3],threatLevel]
-				print tempList
 				try:
 					add_mal_sites(cnx, tempList)
 				except:
@@ -31,7 +29,6 @@ def percentDomainNum(dnsPackets):
 			elif len( str(d[1]).translate(None,string.ascii_letters).translate(None,string.punctuation)) >= 6 and len( str(d[1]).translate(None,string.ascii_letters).translate(None,string.punctuation)) < 8:
 				threatLevel = 4
 				tempList = [d[0],d[1],d[2],d[3],threatLevel]
-				print tempList
 				try:
 					add_mal_sites(cnx, tempList)
 				except:
@@ -39,7 +36,6 @@ def percentDomainNum(dnsPackets):
 			elif len( str(d[1]).translate(None,string.ascii_letters).translate(None,string.punctuation)) >= 8:
 				threatLevel = 5
 				tempList = [d[0],d[1],d[2],d[3],threatLevel]
-				print tempList
 				try:
 					add_mal_sites(cnx, tempList)
 				except:

@@ -1,7 +1,7 @@
 import mysql
 import mysql.connector
 from mysql.connector import errorcode
-from mySQL import get_data, get_cnx, add_mal_sites, check_duplicate, add_sketch_sources
+from mySQL import get_data, get_cnx, add_mal_sites, check_duplicate, add_sketch_sources, add_source_table
 import sys, re, string
 import config
 network_address = config.networkAdd()
@@ -13,10 +13,11 @@ def analyzeTraffic():
     global network_address
     cnx = mysql.connector.connect(user='root', passwd='password', host = '127.0.0.1', database = 'dynama')
     cursor = cnx.cursor()
-    pushBadSourcesQuery = ("SELECT * From dnsPackets WHERE dst!= '"+network_address+"'")
+    pushBadSourcesQuery = ("SELECT sqlID, datetime, src, dst, dnsID, domain, ip From dnsPackets WHERE dst!= '"+network_address+"'")
     cursor.execute(pushBadSourcesQuery)
     sourcesQueryResult = cursor.fetchall()
     for packet in sourcesQueryResult:
+	print packet
 	add_source_table(cnx, packet)
     theQuery = ("SELECT DISTINCT domain, src FROM sourceTable")
     cursor.execute(theQuery)
@@ -39,7 +40,7 @@ def analyzeTraffic():
 			fprob = 4
 		else:
  		       	fprob = 0
-		malQuery = ("SELECT sqlID, domain, dst, src from dnsPackets where domain = '"+item[0]+"' Limit 1")
+		malQuery = ("SELECT sqlID, domain, ip, src from dnsPackets where domain = '"+item[0]+"' Limit 1")
 		cursor.execute(malQuery)
 		result4 = cursor.fetchone()
 		newList = []

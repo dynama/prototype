@@ -18,7 +18,6 @@ def percentDomainNum(dnsPackets):
 		if "in-addr" in d[1]:
 			pass
 		else:
-			print d	
 			if len( str(d[1]).translate(None,string.ascii_letters).translate(None,string.punctuation)) >= 4 and len( str(d[1]).translate(None,string.ascii_letters).translate(None,string.punctuation)) < 6:
 				threatLevel = 3
 				tempList = [d[0],d[1],d[2],d[3],threatLevel]

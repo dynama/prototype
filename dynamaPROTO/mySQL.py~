@@ -57,8 +57,13 @@ def initialize_database():
         ") ENGINE=InnoDB")
     TABLES['sourceTable'] = (
     "CREATE TABLE `sourceTable` ("
-        "  `sqlID` int(11) NOT NULL AUTO_INCREMENT,"
-        "  `source` TEXT NOT NULL,"
+       "  `sqlID` int(11) NOT NULL AUTO_INCREMENT,"
+        "  `datetime` TEXT NOT NULL,"
+        "  `src` TEXT NOT NULL,"
+        "  `dst` TEXT NOT NULL,"
+        "  `dnsID` TEXT NOT NULL,"
+        "  `domain` TEXT NOT NULL,"
+        "  `ip` TEXT NOT NULL,"
         "  PRIMARY KEY (`sqlID`)"
         ") ENGINE=InnoDB")
     TABLES['sketchyByDomain'] = (
@@ -158,7 +163,8 @@ def initialize_database():
             print("OK")
 
     return cursor, cnx
-initialize_database()
+
+#initialize_database()
 def check_duplicate(cnx,table,domain_id,name):
     cursor = cnx.cursor()
     check_dup = ("SELECT count(*) AS dup FROM %s WHERE %s = %s")
@@ -266,15 +272,11 @@ def add_sketch_sources(cnx, data):
 
 def add_source_table(cnx, data):
     cursor = cnx.cursor()
-    add_sketch_source = ("INSERT INTO sourceTable "
-			"(datetime, src, dst, dnsID, domain, ip) "
-                   	"VALUES (%s, %s, %s, %s, %s, %s)")
-    cursor.execute(add_sketch_source, data)
+    add_source = ("INSERT INTO sourceTable "
+			"(sqlID, datetime, src, dst, dnsID, domain, ip) "
+                   	"VALUES (%s, %s, %s, %s, %s, %s, %s)")
+    cursor.execute(add_source, data)
     cnx.commit
-
-
-
-
 
 
 def add_data(cnx, data):
