@@ -13,11 +13,11 @@ def analyzeTraffic():
     global network_address
     cnx = mysql.connector.connect(user='root', passwd='password', host = '127.0.0.1', database = 'dynama')
     cursor = cnx.cursor()
-    pushBadSourcesQuery = ("SELECT sqlID, datetime, src, dst, dnsID, domain, ip From dnsPackets WHERE dst!= '"+network_address+"'")
+    pushBadSourcesQuery = ("SELECT sqlID, datetime, src, dst, dnsID, domain From dnsPackets2 WHERE dst!= '"+network_address+"'")
     cursor.execute(pushBadSourcesQuery)
     sourcesQueryResult = cursor.fetchall()
     for packet in sourcesQueryResult:
-	print packet
+#	print packet
 	add_source_table(cnx, packet)
     theQuery = ("SELECT DISTINCT domain, src FROM sourceTable")
     cursor.execute(theQuery)
@@ -40,16 +40,16 @@ def analyzeTraffic():
 			fprob = 4
 		else:
  		       	fprob = 0
-		malQuery = ("SELECT sqlID, domain, ip, src from dnsPackets where domain = '"+item[0]+"' Limit 1")
+		malQuery = ("SELECT sqlID, domain, dst, src from dnsPackets2 where domain = '"+item[0]+"' Limit 1")
 		cursor.execute(malQuery)
 		result4 = cursor.fetchone()
 		newList = []
 		for d in result4:
 			newList.append(d)
 		newList.append(fprob)
-		print newList
+#		print newList
 		try:
 			add_sketch_sources(cnx, newList)
 		except:
 			pass
-analyzeTraffic()
+#analyzeTraffic()

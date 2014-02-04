@@ -21,7 +21,7 @@ def initialize_database():
         "  `dst` TEXT NOT NULL,"
         "  `dnsID` TEXT NOT NULL,"
         "  `domain` TEXT NOT NULL,"
-        "  `ip` TEXT NOT NULL,"
+#        "  `ip` TEXT NOT NULL,"
         "  PRIMARY KEY (`sqlID`)"
         ") ENGINE=InnoDB")
     TABLES['dnsPackets2'] = (
@@ -32,7 +32,7 @@ def initialize_database():
         "  `dst` TEXT NOT NULL,"
         "  `dnsID` TEXT NOT NULL,"
         "  `domain` TEXT NOT NULL,"
-        "  `ip` TEXT NOT NULL,"
+#        "  `ip` TEXT NOT NULL,"
         "  PRIMARY KEY (`sqlID`)"
         ") ENGINE=InnoDB")
     TABLES['dstAnalysis'] = (
@@ -54,7 +54,7 @@ def initialize_database():
     "CREATE TABLE `sketchySources` ("
         "  `sqlID` int(11) NOT NULL AUTO_INCREMENT,"
         "  `domain` TEXT NOT NULL,"
-        "  `ip` TEXT NOT NULL,"
+        "  `dst` TEXT NOT NULL,"
         "  `src` TEXT NOT NULL,"
         "  `level` TEXT NOT NULL,"
         "  PRIMARY KEY (`sqlID`)"
@@ -67,7 +67,7 @@ def initialize_database():
         "  `dst` TEXT NOT NULL,"
         "  `dnsID` TEXT NOT NULL,"
         "  `domain` TEXT NOT NULL,"
-        "  `ip` TEXT NOT NULL,"
+#        "  `ip` TEXT NOT NULL,"
         "  PRIMARY KEY (`sqlID`)"
         ") ENGINE=InnoDB")
     TABLES['sketchyByDomain'] = (
@@ -126,11 +126,11 @@ def initialize_database():
 	"`src` VARCHAR(15) NOT NULL,"
 	"`high_number_count_in_name` TEXT NOT NULL,"
 	"`high_amount_of_ips_per_domain` TEXT NOT NULL,"
-    "`sketchy_src` TEXT NOT NULL,"
-    "`sketchy_browse` TEXT NOT NULL,"
+    	"`sketchy_src` TEXT NOT NULL,"
+   	 "`sketchy_browse` TEXT NOT NULL,"
 	"`total_number_of_flags` INT NOT NULL,"
 	"PRIMARY KEY (`sqlID`),"
-    "UNIQUE KEY `UNIQ_SRC` (`src`)"
+    	"UNIQUE KEY `UNIQ_SRC` (`src`)"
 	") ENGINE=InnoDB")
     
 
@@ -168,7 +168,7 @@ def initialize_database():
 
     return cursor, cnx
 
-initialize_database()
+#initialize_database()
 def check_duplicate(cnx,table,domain_id,name):
     cursor = cnx.cursor()
     check_dup = ("SELECT count(*) AS dup FROM %s WHERE %s = %s")
@@ -196,8 +196,8 @@ def add_dns_data(cnx, data, dnsTable):
     cursor = cnx.cursor()
     # From: http://dev.mysql.com/doc/connector-python/en/myconnpy_example_cursor_transaction.html
     addDNS = ("INSERT INTO " + dnsTable + " "
-                   "(datetime, src, dst, dnsID, domain, ip) "
-                   "VALUES (%s, %s, %s, %s, %s, %s)")
+                   "(datetime, src, dst, dnsID, domain) "
+                   "VALUES (%s, %s, %s, %s, %s)")
     cursor.execute(addDNS, data)
     cnx.commit()
 

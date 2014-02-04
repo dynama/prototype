@@ -34,17 +34,17 @@ def parse_output(cnx, out, dnsTable):
         src = re.search( r'[0-9]+(?:\.[0-9]+){3}', out[26:41]).group()
     except:
         src = ''
-    print 'src: ' + src
+#    print 'src: ' + src
     try:
         dst = re.search( r'[0-9]+(?:\.[0-9]+){3}', out[43:57]).group()
     except:
         dst = ''
-    print 'dst: ' + dst
+#    print 'dst: ' + dst
     dnsID = out[56:62]
-    print 'dnsID: ' + dnsID
-    print out[88:100]
+#    print 'dnsID: ' + dnsID
+#    print out[88:100]
     if out[78:86] == "response":
-        #print 'response'
+#        print 'response'
         if out[88:100] != 'No such name':
             payload = out[78:]
             responseIPs = re.findall( r'[0-9]+(?:\.[0-9]+){3}', payload) # http://stackoverflow.com/questions/2890896/extract-ip-address-from-an-html-string-python
@@ -57,43 +57,53 @@ def parse_output(cnx, out, dnsTable):
             badRequest = True
     elif out[63:105] == 'Destination unreachable (Port unreachable)':
         portUnreachable = True
+    elif len(out[80:]) > 30:
+	isRequest = False
     else:
         isRequest = True
-        lookupDomain = out[80:]
+        lookupDomain = out[82:]
         lookupDomain = lookupDomain[:-1]
-        #print 'domain: ' + lookupDomain
+#        print 'domain: ' + lookupDomain
+	if "No such name" in lookupDomain:
+		lookupDomain = "Failed Lookup"
 
     if isRequest:
-        dnsIDDict[dnsID] = (gmttime, src, dst, dnsID, lookupDomain) # store the domain in the dict for when the response comes
+#	print "hitting is request flag"
+# store the domain in the dict for when the response comes
+        dnsIDDict[dnsID] = (gmttime, src, dst, dnsID, lookupDomain)
+#Attempt to insert data
+	data1 = (gmttime, src, dst, dnsID, lookupDomain)
+	add_dns_data(cnx, data1, dnsTable)
         orderedDict[dnsID] = unixTime # store the domain id in and ordered dictionary with the value of the unix time of the request
         #check_for_old(cnx, 2, dnsTable) ## Future work, get this to work (problem with buffered output from T-shark makes the timestamps old when we get them)
-    else: 
-        if dnsID in dnsIDDict:
+#    else: 
+#        if dnsID in dnsIDDict:
             #print 'DATA:'
-            foundDomain = dnsIDDict[dnsID][4] # only do one lookup
-            if badRequest:
-                data = (gmttime, src, dst, dnsID, foundDomain, 'Bad Request')
-                #print data
-            elif serverFailure:
-                data = (gmttime, src, dst, dnsID, foundDomain, 'Server failure')
-            elif portUnreachable:
-                data = (gmttime, src, dst, dnsID, foundDomain, 'Port unreachable')
-            else:
-                for ips in responseIPs:
-                    data = (gmttime, src, dst, dnsID, foundDomain, ips)
-                    #print data
-                    add_dns_data(cnx, data, dnsTable)
-            if badRequest or serverFailure or portUnreachable:
-                #print data
-                add_dns_data(cnx, data, dnsTable) # add our data to the database
-            del dnsIDDict[dnsID]
-            try:
-                del orderedDict[dnsID]
-                #print 'deleted ' + dnsID
-            except:
-                #print 'tried to delete ' + dnsID
-                if bufferEntry[0] == dnsID:
-                    bufferEntry = ('empty', 'empty')
+#	    print "Is response"
+#            foundDomain = dnsIDDict[dnsID][3] # only do one lookup
+#            if badRequest:
+#                data = (gmttime, src, dst, dnsID, foundDomain)
+#                #print data
+#            elif serverFailure:
+#                data = (gmttime, src, dst, dnsID, foundDomain)
+#            elif portUnreachable:
+#                data = (gmttime, src, dst, dnsID, foundDomain)
+#            else:
+#                for ips in responseIPs:
+#                    data = (gmttime, src, dst, dnsID, foundDomain, ips)
+#                    print data
+#                    add_dns_data(cnx, data, dnsTable)
+#            if badRequest or serverFailure or portUnreachable:
+#                #print data
+#                add_dns_data(cnx, data, dnsTable) # add our data to the database
+#            del dnsIDDict[dnsID]
+#            try:
+#                del orderedDict[dnsID]
+#                #print 'deleted ' + dnsID
+#            except:
+#                #print 'tried to delete ' + dnsID
+#                if bufferEntry[0] == dnsID:
+#                    bufferEntry = ('empty', 'empty')
                 
 
 '''

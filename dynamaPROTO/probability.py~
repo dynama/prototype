@@ -51,9 +51,9 @@ def getprob():
 	elif len(malData) == 0:
 		if sketchThreat < ta:
 			probability = 'no'		
-		elif sketchThreat >= ta and totalThreat < tb:
+		elif sketchThreat >= ta and sketchThreat < tb:
             		probability = 'low'
-       		elif sketchThreat >= tb and totalThreat < tc:
+       		elif sketchThreat >= tb and sketchThreat < tc:
             		probability = 'medium'
         	elif sketchThreat >= tc:
             		probability = 'high'
@@ -65,7 +65,9 @@ def getprob():
 				add_prob(cnx,tempList)
 			except:
 				pass
-    #
+    #This part of the function looks at malSites and then tries to find a match in sketchySources, in case
+    #nameBasedAnlaysis.py found something that frequencyBasedAnlaysis.py did not.
+
     malDataWhole = get_data(cnx, "SELECT * FROM malSites")
     for item2 in malDataWhole:
 	sqlID2 = str(item2[0])
@@ -122,7 +124,7 @@ def getprob():
 #            info = data[:5]
 #            add_prob(cnx, info, probability)
 
-getprob()
+#getprob()
             
         
         

@@ -54,12 +54,12 @@ def main():
 		#analyzePercentToDestination(destSum,domKeys)
 		#testsRun += 1
 		print 'Running Numbers in Domain Test...',
-		percentDomainNum()
-		testsRun += 1
+#		percentDomainNum()
+#		testsRun += 1
 		#removeDup()
-		print 'Checking for multiple return IPs...',
-		num_DNS_IP()
-		testsRun += 1
+#		print 'Checking for multiple return IPs...',
+#		num_DNS_IP()
+#		testsRun += 1
 		getprob()
 		print ' Done.'
 		if testsRun == 0:

@@ -3,6 +3,7 @@ from dump_to_sql import dumper
 from mySQL import truncate_table, get_cnx, get_data, update_mal_hosts
 from dnsBasedAnalysis import num_DNS_IP
 from nameBasedAnalysis import percentDomainNum
+from nameBasedAnalysis import percentVowels
 from frequencyBasedAnalysis_patched import analyzeTraffic
 from probability import getprob
 import threading, Queue
@@ -24,7 +25,7 @@ class main_analysis(threading.Thread):
 	def start_traffic_capture(self):
 		self.commiunicationQueue.put('Initializing Traffic Capture...')
 		try:
-		#iface = checkInterface()
+			#iface = checkInterface()
 			#self.myDumper = dumper(self.check_interface(), self.analysisInterval, self.commiunicationQueue)
 			self.myDumper = dumper("eth0", self.analysisInterval, self.commiunicationQueue)
 			self.myDumper.start()
@@ -44,27 +45,28 @@ class main_analysis(threading.Thread):
 		cnx = get_cnx()
 		while not self.stopAnalysis.isSet():
 			currentDNSTable = self.myDumper.get_analysis_table()
-			self.commiunicationQueue.put('Checking for multiple return IPs...')
-#			num_DNS_IP(currentDNSTable)
+			self.commiunicationQueue.put('Frequency Based Analysis in progress...')
+			analyzeTraffic()
 			analysisModulesRun += 1
 			self.commiunicationQueue.put('Done.')
-			self.commiunicationQueue.put('Checking for suspicious domains...')
-			#percentDomainNum(currentDNSTable)
+			self.commiunicationQueue.put('Name Based Analysis in progress...')
+			percentDomainNum()
+			percentVowels()
 			analysisModulesRun += 1
 			self.commiunicationQueue.put('Done.')
-			self.commiunicationQueue.put('Checking for suspicious hosts...')
+			self.commiunicationQueue.put('Compiling Probability...')
 			#analyzeTraffic()
-			#getprob()
+			getprob()
 			analysisModulesRun += 1
 			self.commiunicationQueue.put('Done.')
-			self.commiunicationQueue.put('Checking for hosts browsing suspicious domains...')
+#			self.commiunicationQueue.put('Checking for hosts browsing suspicious domains...')
 #			sources_by_destination(currentDNSTable)
-			analysisModulesRun += 1
-			self.commiunicationQueue.put('Done.')
-			self.commiunicationQueue.put('Doing the meta analysis...')
-			self.meta_analysis()
-			analysisModulesRun += 1
-			self.commiunicationQueue.put('Done.')
+#			analysisModulesRun += 1
+#			self.commiunicationQueue.put('Done.')
+			#self.commiunicationQueue.put('Doing the meta analysis...')
+			#self.meta_analysis()
+			#analysisModulesRun += 1
+			#self.commiunicationQueue.put('Done.')
 			if analysisModulesRun == 0:
 				self.commiunicationQueue.put('No analysis run')
 			else:

@@ -1,7 +1,3 @@
-
-
-
-
 import mysql.connector
 from mysql.connector import errorcode
 from mySQL import get_data, add_mal_sites, get_cnx, check_duplicate
@@ -12,10 +8,9 @@ import re
 
 
 #Percentage of numerical character in domain name.
-def percentDomainNum(dnsPackets):
-	print "running name based analysis"
+def percentDomainNum():
 	cnx = get_cnx()
-	data = get_data(cnx, "SELECT DISTINCT sqlID, domain, dst, ip FROM dnsPackets")
+	data = get_data(cnx, "SELECT DISTINCT sqlID, domain, dst, src FROM dnsPackets")
 
 	for d in data:
 		#checks to see how many numbers are in the domain name.
@@ -45,4 +40,42 @@ def percentDomainNum(dnsPackets):
 					pass
 
 	cnx.close()
-percentDomainNum("dnsPackets")
+#percentDomainNum()
+
+def percentVowels():
+	cnx = get_cnx()
+	data = get_data(cnx, "SELECT DISTINCT sqlID, domain, dst, src FROM dnsPackets")
+	vowels = "aeiouAEIOU"
+	threatLevel = 0
+	for d in data:
+		if "in-addr" in d[1]:
+			pass
+		else:
+			count = 0
+			threatLevel = 0
+			URLength = len(d[1])
+			for letter in d[1]:
+				if letter in vowels:
+					count += 1
+				ratio = count/float(URLength)
+				if ratio < .15:
+					threatLevel = 5
+				elif ratio < .25:
+					threatLevel = 4
+				elif ratio < .35:
+					threatLevel = 3
+				elif ratio > .55:
+					threatLevel = 3
+				elif ratio > .65:
+					threatLevel = 4
+				elif ratio > .75:
+					threatLevel = 5
+
+				tempList = [d[0],d[1],d[2],d[3],threatLevel]
+				try:
+					add_mal_sites(cnx, tempList)
+				except:
+					pass
+
+
+

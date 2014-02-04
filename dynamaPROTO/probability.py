@@ -51,9 +51,9 @@ def getprob():
 	elif len(malData) == 0:
 		if sketchThreat < ta:
 			probability = 'no'		
-		elif sketchThreat >= ta and totalThreat < tb:
+		elif sketchThreat >= ta and sketchThreat < tb:
             		probability = 'low'
-       		elif sketchThreat >= tb and totalThreat < tc:
+       		elif sketchThreat >= tb and sketchThreat < tc:
             		probability = 'medium'
         	elif sketchThreat >= tc:
             		probability = 'high'
@@ -76,9 +76,9 @@ def getprob():
 	if len(sketchDataPartial) == 0:
 		if malSoleThreat < ta:
 			probability = 'no'
-		elif malSoleThreat >= ta and totalThreat < tb:
+		elif malSoleThreat >= ta and malSoleThreat < tb:
             		probability = 'low'
-       		elif malSoleThreat >= tb and totalThreat < tc:
+       		elif malSoleThreat >= tb and malSoleThreat < tc:
             		probability = 'medium'
         	elif malSoleThreat >= tc:
             		probability = 'high'
@@ -124,7 +124,7 @@ def getprob():
 #            info = data[:5]
 #            add_prob(cnx, info, probability)
 
-getprob()
+#getprob()
             
         
         

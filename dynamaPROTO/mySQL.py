@@ -21,7 +21,7 @@ def initialize_database():
         "  `dst` TEXT NOT NULL,"
         "  `dnsID` TEXT NOT NULL,"
         "  `domain` TEXT NOT NULL,"
-        "  `ip` TEXT NOT NULL,"
+#        "  `ip` TEXT NOT NULL,"
         "  PRIMARY KEY (`sqlID`)"
         ") ENGINE=InnoDB")
     TABLES['dnsPackets2'] = (
@@ -32,7 +32,7 @@ def initialize_database():
         "  `dst` TEXT NOT NULL,"
         "  `dnsID` TEXT NOT NULL,"
         "  `domain` TEXT NOT NULL,"
-        "  `ip` TEXT NOT NULL,"
+#        "  `ip` TEXT NOT NULL,"
         "  PRIMARY KEY (`sqlID`)"
         ") ENGINE=InnoDB")
     TABLES['dstAnalysis'] = (
@@ -54,7 +54,7 @@ def initialize_database():
     "CREATE TABLE `sketchySources` ("
         "  `sqlID` int(11) NOT NULL AUTO_INCREMENT,"
         "  `domain` TEXT NOT NULL,"
-        "  `ip` TEXT NOT NULL,"
+        "  `dst` TEXT NOT NULL,"
         "  `src` TEXT NOT NULL,"
         "  `level` TEXT NOT NULL,"
         "  PRIMARY KEY (`sqlID`)"
@@ -67,7 +67,7 @@ def initialize_database():
         "  `dst` TEXT NOT NULL,"
         "  `dnsID` TEXT NOT NULL,"
         "  `domain` TEXT NOT NULL,"
-        "  `ip` TEXT NOT NULL,"
+#        "  `ip` TEXT NOT NULL,"
         "  PRIMARY KEY (`sqlID`)"
         ") ENGINE=InnoDB")
     TABLES['sketchyByDomain'] = (
@@ -168,7 +168,7 @@ def initialize_database():
 
     return cursor, cnx
 
-initialize_database()
+#initialize_database()
 def check_duplicate(cnx,table,domain_id,name):
     cursor = cnx.cursor()
     check_dup = ("SELECT count(*) AS dup FROM %s WHERE %s = %s")
@@ -196,8 +196,8 @@ def add_dns_data(cnx, data, dnsTable):
     cursor = cnx.cursor()
     # From: http://dev.mysql.com/doc/connector-python/en/myconnpy_example_cursor_transaction.html
     addDNS = ("INSERT INTO " + dnsTable + " "
-                   "(datetime, src, dst, dnsID, domain, ip) "
-                   "VALUES (%s, %s, %s, %s, %s, %s)")
+                   "(datetime, src, dst, dnsID, domain) "
+                   "VALUES (%s, %s, %s, %s, %s)")
     cursor.execute(addDNS, data)
     cnx.commit()
 
@@ -282,8 +282,8 @@ def add_sketch_sources(cnx, data):
 def add_source_table(cnx, data):
     cursor = cnx.cursor()
     add_source = ("INSERT INTO sourceTable "
-			"(sqlID, datetime, src, dst, dnsID, domain, ip) "
-                   	"VALUES (%s, %s, %s, %s, %s, %s, %s)")
+			"(sqlID, datetime, src, dst, dnsID, domain) "
+                   	"VALUES (%s, %s, %s, %s, %s, %s)")
     cursor.execute(add_source, data)
     cnx.commit
 

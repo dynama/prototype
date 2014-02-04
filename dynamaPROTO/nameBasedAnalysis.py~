@@ -1,32 +1,22 @@
-
-
-
-
 import mysql.connector
 from mysql.connector import errorcode
 from mySQL import get_data, add_mal_sites, get_cnx, check_duplicate
 import string
 import re
 
-#These features are based on the domain name
+#This module focuses on the domain name to see if it is potentially malware.
 
 
-#Percentage of numerical character in domain name
-def percentDomainNum(dnsPackets):
-	print "running name based analysis"
+#Percentage of numerical character in domain name.
+def percentDomainNum():
 	cnx = get_cnx()
-<<<<<<< HEAD
-	data = get_data(cnx, "SELECT DISTINCT sqlID, domain, dst, ip FROM dnsPackets") 
-=======
-	data = get_data(cnx, "SELECT DISTINCT sqlID, domain, dst, ip FROM dnsPackets")
->>>>>>> fd6fa56b6613a38b66a5ec70f5255e8ab8693faf
+	data = get_data(cnx, "SELECT DISTINCT sqlID, domain, dst, src FROM dnsPackets")
 
 	for d in data:
-		#checks to see how many numbers are in the domain name
+		#checks to see how many numbers are in the domain name.
 		if "in-addr" in d[1]:
 			pass
 		else:
-			print d	
 			if len( str(d[1]).translate(None,string.ascii_letters).translate(None,string.punctuation)) >= 4 and len( str(d[1]).translate(None,string.ascii_letters).translate(None,string.punctuation)) < 6:
 				threatLevel = 3
 				tempList = [d[0],d[1],d[2],d[3],threatLevel]
@@ -50,4 +40,42 @@ def percentDomainNum(dnsPackets):
 					pass
 
 	cnx.close()
-percentDomainNum("dnsPackets")
+#percentDomainNum()
+
+def percentVowels():
+	cnx = get_cnx()
+	data = get_data(cnx, "SELECT DISTINCT sqlID, domain, dst, src FROM dnsPackets")
+	vowels = "aeiouAEIOU"
+	threatLevel = 0
+	for d in data:
+		if "in-addr" in d[1]:
+			pass
+		else:
+			count = 0
+			threatLevel = 0
+			URLength = len(d[1])
+			for letter in d[1]:
+				if letter in vowels:
+					count += 1
+				ratio = count/float(URLength)
+				if ratio < .15:
+					threatLevel = 5
+				elif ratio < .25:
+					threatLevel = 4
+				elif ratio < .35:
+					threatLevel = 3
+				elif ratio > .55:
+					threatLevel = 3
+				elif ratio > .65:
+					threatLevel = 4
+				elif ratio > .75:
+					threatLevel = 5
+
+				tempList = [d[0],d[1],d[2],d[3],threatLevel]
+				try:
+					add_mal_sites(cnx, tempList)
+				except:
+					pass
+
+percentVowels()
+
