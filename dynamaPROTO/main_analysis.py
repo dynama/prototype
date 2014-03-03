@@ -1,12 +1,14 @@
 import sys, os, time
 from dump_to_sql import dumper
 from mySQL import truncate_table, get_cnx, get_data, update_mal_hosts
-from dnsBasedAnalysis import num_DNS_IP
 from nameBasedAnalysis import percentDomainNum
 from nameBasedAnalysis import percentVowels
 from frequencyBasedAnalysis_patched import analyzeTraffic
 from probability import getprob
 import threading, Queue
+import os.path, time, datetime
+workingDir = "/home/dynama/Desktop/prototype/dynamaPROTO" 
+log = os.path.join(workingDir, 'dynamaLog.txt')
 
 #This module serves as the main module for dynama. It calls all of the different analyzing modules for the program. 
 
@@ -25,11 +27,11 @@ class main_analysis(threading.Thread):
 	def start_traffic_capture(self):
 		self.commiunicationQueue.put('Initializing Traffic Capture...')
 		try:
-			#iface = checkInterface()
-			#self.myDumper = dumper(self.check_interface(), self.analysisInterval, self.commiunicationQueue)
+#	Supposed to auto read the interface on the machine to capture on, does not currently work, so it is hard coded in.
+#			iface = checkInterface()
+#			self.myDumper = dumper(iface, self.analysisInterval, self.commiunicationQueue)
 			self.myDumper = dumper("eth0", self.analysisInterval, self.commiunicationQueue)
 			self.myDumper.start()
-			#time.sleep(5)
 			self.commiunicationQueue.put('COMPLETE')
 		except:
 			self.commiunicationQueue.put('ERROR')
@@ -55,24 +57,16 @@ class main_analysis(threading.Thread):
 			analysisModulesRun += 1
 			self.commiunicationQueue.put('Done.')
 			self.commiunicationQueue.put('Compiling Probability...')
-			#analyzeTraffic()
 			getprob()
 			analysisModulesRun += 1
 			self.commiunicationQueue.put('Done.')
-#			self.commiunicationQueue.put('Checking for hosts browsing suspicious domains...')
-#			sources_by_destination(currentDNSTable)
-#			analysisModulesRun += 1
-#			self.commiunicationQueue.put('Done.')
-			#self.commiunicationQueue.put('Doing the meta analysis...')
-			#self.meta_analysis()
-			#analysisModulesRun += 1
-			#self.commiunicationQueue.put('Done.')
 			if analysisModulesRun == 0:
 				self.commiunicationQueue.put('No analysis run')
 			else:
 				self.commiunicationQueue.put(str(analysisModulesRun) + ' analysis modules run')
 				analysisModulesRun = 0
-			truncate_table(cnx, currentDNSTable) # delete all data once we have analyzed it ## Future work, get this to work when no data is coming in
+			truncate_table(cnx, currentDNSTable) 
+			# delete all data once we have analyzed it ## Future work, get this to work when no data is coming in
 			time.sleep(self.analysisInterval)
 
 	def join(self, timeout=None):
@@ -92,7 +86,7 @@ class main_analysis(threading.Thread):
 			for src in sources:
 				update_mal_hosts(cnx,src[0],tables[1],tables[2])  
 
-	def check_interface(self): # Stolen with love from: https://github.com/kernel-sanders/Arsenic/blob/master/arsenic/nmapRunner.py
+	def check_interface(self): # https://github.com/kernel-sanders/Arsenic/blob/master/arsenic/nmapRunner.py
 		file = os.popen("netstat -nr")
 		data = file.read()
 		file.close()

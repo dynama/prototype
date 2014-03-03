@@ -21,7 +21,6 @@ def initialize_database():
         "  `dst` TEXT NOT NULL,"
         "  `dnsID` TEXT NOT NULL,"
         "  `domain` TEXT NOT NULL,"
-#        "  `ip` TEXT NOT NULL,"
         "  PRIMARY KEY (`sqlID`)"
         ") ENGINE=InnoDB")
     TABLES['dnsPackets2'] = (
@@ -32,24 +31,8 @@ def initialize_database():
         "  `dst` TEXT NOT NULL,"
         "  `dnsID` TEXT NOT NULL,"
         "  `domain` TEXT NOT NULL,"
-#        "  `ip` TEXT NOT NULL,"
         "  PRIMARY KEY (`sqlID`)"
         ") ENGINE=InnoDB")
-    TABLES['dstAnalysis'] = (
-	"CREATE TABLE `dstAnalysis` ("
-	"  `sqlID` int(11) NOT NULL AUTO_INCREMENT,"
-	" `domain` TEXT NOT NULL,"
-    	"  `dstPercent` FLOAT NOT NULL,"
-    	"  `dst_Domain` TEXT NOT NULL,"
-    	"  PRIMARY KEY (`sqlID`)"
-    	") ENGINE=InnoDB")
-    TABLES['srcAnalysis'] = (
-	"CREATE TABLE `srcAnalysis` ("
-	"  `sqlID` int(11) NOT NULL AUTO_INCREMENT,"
-    	"  `src` TEXT NOT NULL,"
-    	"  `srcPercent` FLOAT NOT NULL,"
-    	"  PRIMARY KEY (`sqlID`)"
-    	") ENGINE=InnoDB")
     TABLES['sketchySources'] = (
     "CREATE TABLE `sketchySources` ("
         "  `sqlID` int(11) NOT NULL AUTO_INCREMENT,"
@@ -67,13 +50,6 @@ def initialize_database():
         "  `dst` TEXT NOT NULL,"
         "  `dnsID` TEXT NOT NULL,"
         "  `domain` TEXT NOT NULL,"
-#        "  `ip` TEXT NOT NULL,"
-        "  PRIMARY KEY (`sqlID`)"
-        ") ENGINE=InnoDB")
-    TABLES['sketchyByDomain'] = (
-    "CREATE TABLE `sketchySourcesByDomain` ("
-        "  `sqlID` int(11) NOT NULL AUTO_INCREMENT,"
-        "  `src` TEXT NOT NULL,"
         "  PRIMARY KEY (`sqlID`)"
         ") ENGINE=InnoDB")
     TABLES['malSites'] = (
@@ -94,46 +70,6 @@ def initialize_database():
         " `prob` TEXT NOT NULL,"
 	"  PRIMARY KEY (`sqlID`)"
 	") ENGINE=InnoDB")
-    TABLES['region'] = (
-	" CREATE TABLE `region` ("
-	" `sqlID` int(11) NOT NULL AUTO_INCREMENT,"
-	" `ip` TEXT NOT NULL, "
-	" `country` TEXT NOT NULL,"
-	" PRIMARY KEY (`sqlID`)"
-	") ENGINE=InnoDB")
-    TABLES['regionAnalysis'] = (
-	" CREATE TABLE `regionAnalysis` ("
-	" `sqlID` int(11) NOT NULL AUTO_INCREMENT,"
-	" `country` TEXT NOT NULL, "
-	" `frequency_today` TEXT NOT NULL,"
-	" `frequency_hour` TEXT NOT NULL,"
-	" `frequency_lastSess` TEXT NOT NULL,"
-	" `overall` TEXT NOT NULL,"
-	" PRIMARY KEY (`sqlID`)"
-	") ENGINE=InnoDB")
-    TABLES['multipleReturnIPs'] = (
-    " CREATE TABLE `multipleReturnIPs` ("
-    " `sqlID` int(11) NOT NULL AUTO_INCREMENT,"
-    " `datetime` TEXT NOT NULL, "
-    " `src` TEXT NOT NULL,"
-    " `domain` TEXT NOT NULL,"
-    " `numIPs` TEXT NOT NULL,"
-    " PRIMARY KEY (`sqlID`)"
-    ") ENGINE=InnoDB")
-    TABLES['malHosts'] = (
-	" CREATE TABLE `malHosts` ("
-	"`sqlID` int(11) NOT NULL AUTO_INCREMENT,"
-	"`src` VARCHAR(15) NOT NULL,"
-	"`high_number_count_in_name` TEXT NOT NULL,"
-	"`high_amount_of_ips_per_domain` TEXT NOT NULL,"
-    	"`sketchy_src` TEXT NOT NULL,"
-   	 "`sketchy_browse` TEXT NOT NULL,"
-	"`total_number_of_flags` INT NOT NULL,"
-	"PRIMARY KEY (`sqlID`),"
-    	"UNIQUE KEY `UNIQ_SRC` (`src`)"
-	") ENGINE=InnoDB")
-    
-
 
     def create_database(cursor):
         try:
@@ -274,7 +210,7 @@ def add_multipleReturnIP_data(cnx,data):
 def add_sketch_sources(cnx, data):
     cursor = cnx.cursor()
     add_sketch_source = ("INSERT INTO sketchySources "
-				"(sqlID, domain, ip, src, level) "
+				"(sqlID, domain, dst, src, level) "
 				"VALUES (%s, %s, %s, %s, %s)")
     cursor.execute(add_sketch_source, data)
     cnx.commit()

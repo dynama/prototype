@@ -1,11 +1,14 @@
 import sys, os, time
 from dump_to_sql import dumper
 from mySQL import truncate_table, get_cnx, get_data, update_mal_hosts
-from dnsBasedAnalysis import num_DNS_IP
 from nameBasedAnalysis import percentDomainNum
+from nameBasedAnalysis import percentVowels
 from frequencyBasedAnalysis_patched import analyzeTraffic
 from probability import getprob
 import threading, Queue
+import os.path, time, datetime
+workingDir = "/home/dynama/Desktop/prototype/dynamaPROTO" 
+log = os.path.join(workingDir, 'dynamaLog.txt')
 
 #This module serves as the main module for dynama. It calls all of the different analyzing modules for the program. 
 
@@ -24,8 +27,8 @@ class main_analysis(threading.Thread):
 	def start_traffic_capture(self):
 		self.commiunicationQueue.put('Initializing Traffic Capture...')
 		try:
-			#iface = checkInterface()
-			#self.myDumper = dumper(self.check_interface(), self.analysisInterval, self.commiunicationQueue)
+#			iface = checkInterface()
+#			self.myDumper = dumper(iface, self.analysisInterval, self.commiunicationQueue)
 			self.myDumper = dumper("eth0", self.analysisInterval, self.commiunicationQueue)
 			self.myDumper.start()
 			#time.sleep(5)
@@ -36,6 +39,7 @@ class main_analysis(threading.Thread):
 				self.myDumper.stop()
 			except:
 				pass
+# We are getting an error, which is stopping the myDumper.  we need to figure out how to mitigate that error.
 
 	def run(self):
 		self.commiunicationQueue.put('Running analysis modules every ' + str(self.analysisInterval) + ' seconds...')
@@ -54,7 +58,6 @@ class main_analysis(threading.Thread):
 			analysisModulesRun += 1
 			self.commiunicationQueue.put('Done.')
 			self.commiunicationQueue.put('Compiling Probability...')
-			#analyzeTraffic()
 			getprob()
 			analysisModulesRun += 1
 			self.commiunicationQueue.put('Done.')

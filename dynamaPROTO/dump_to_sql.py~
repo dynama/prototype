@@ -38,10 +38,9 @@ class dumper(threading.Thread):
 		self.cursor, self.cnx = initialize_database()
 		# This is the actual tshark command to start the capture, it will only capture DNS responses.
 		self.p1 = subprocess.Popen('tshark -i ' + self.iface + ' -R "dns" -o column.format:""No.","%m", "Time", "%Yt", "Source", "%s", "Destination", "%d", "ID", "%Cus:dns.id", "Info", "%i""', shell=True, stdout=subprocess.PIPE) # http://unix.stackexchange.com/questions/27246/how-to-gather-dns-a-record-requests
-		
+		lastSwitch = time.time()
 		currentTable = 'dnsPackets'
-		while not self.stopDump.isSet():
-			lastSwitch = time.time() 
+		while not self.stopDump.isSet(): 
 			if time.time() - lastSwitch >= self.analysisInterval: # switch between two tables so analysis can run on a static table
 				if currentTable == 'dnsPackets':
 					currentTable = 'dnsPackets2'

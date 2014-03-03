@@ -23,11 +23,10 @@ def parse_output(cnx, out, dnsTable):
     gmttime = out[0:26]
     responseIPs = []
     #print 'time: ' + gmttime
-    # This next line will melt your face. 
     # It takes the gmttime string, parses it into a tuple, which is only accurate to the second,
     # converts that into unix time, strips the ".0" off 
     # and appends the actual decimal from the gmttime, then turns that string into a Decimal object.
-    # Boom. Try that in C! Now we have 1/100000 second accuracy and in unix time format.
+    # Now we have 1/100000 second accuracy and in unix time format.
     unixTime = Decimal(str(time.mktime(dateutil.parser.parse(gmttime).timetuple()))[:-2] + gmttime[-7:]) # http://stackoverflow.com/questions/2775864/python-datetime-to-unix-timestamp and http://stackoverflow.com/questions/1995615/python-how-can-i-format-a-decimal-to-always-show-2-decimal-places
     #print 'unix time: ' + str(unixTime)
     try:

@@ -21,15 +21,15 @@ def freqVars():
     fc = 7
     return flush, fa, fb, fc
 
-#this will define what address our dns should resolve to
+#this will define what address our dns should resolve to, Freq will flag if not to this address
 def networkAdd():
-    network_address = str("10.20.30.40")
+    network_address = str("134.240.44.160")
     return network_address
 
 #thresholds to determine what the threat level for the DNS packet is once analysis is done, 
 #based off of the above thresholds and the analysis module's results.
 def tVars():
     ta = 1
-    tb = 7
-    tc = 10
+    tb = 3
+    tc = 6
     return ta, tb, tc

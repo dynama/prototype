@@ -72,10 +72,10 @@ def execute_cmd(cmd_string):
     raw_input("Press enter")
     print ""
 
-def show_previous_analysis(screen):
-    curses.endwin()
-    sqlString = "select src AS 'Potential Infected Hosts', high_number_count_in_name AS 'Suspicious Domains', high_amount_of_ips_per_domain AS 'High IP Queries', sketchy_src AS 'Hyperactive Host', sketchy_browse AS 'Low Access Ratio', total_number_of_flags AS 'Total Flags Triggered' from malHosts"
-    execute_cmd('mysql -u root --password=password --execute="'+sqlString+'" dynama')
+#def show_previous_analysis(screen):
+#    curses.endwin()
+#    sqlString = "select src AS 'Potential Infected Hosts', high_number_count_in_name AS 'Suspicious Domains', high_amount_of_ips_per_domain AS 'High IP Queries', sketchy_src AS 'Hyperactive Host', sketchy_browse AS 'Low Access Ratio', total_number_of_flags AS 'Total Flags Triggered' from malHosts"
+#    execute_cmd('mysql -u root --password=password --execute="'+sqlString+'" dynama')
 
 def run_dynama(screen, analysisTimeInterval):
     printQueue = Queue.Queue()
@@ -106,10 +106,10 @@ def show_databases(screen):
     screen.clear()
     screen.border(0)
     screen.addstr(2, 2, "Select a table to view")
-    screen.addstr(4, 4, "1 - dnsPackets")
-    screen.addstr(5, 4, "2 - dnsPackets2")
-    screen.addstr(6, 4, "3 - multipleReturnIPs")
-    screen.addstr(7, 4, "4 - Other tables")
+    screen.addstr(4, 4, "1 - Current Traffic")
+    screen.addstr(5, 4, "2 - Flagged Traffic- Name Based")
+    screen.addstr(6, 4, "3 - Flagged Traffic- Frequency Based")
+    screen.addstr(7, 4, "4 - Flagged Traffic- Composite Threat Assessment")
     screen.addstr(8, 4, "5 - Exit")
     screen.refresh()
 
@@ -120,10 +120,13 @@ def show_databases(screen):
         execute_cmd('mysql -u root --password=password --execute="Select * from dnsPackets" dynama')
     elif userChoice == ord('2'):
         curses.endwin()
-        execute_cmd('mysql -u root --password=password --execute="Select * from dnsPackets2" dynama')
+        execute_cmd('mysql -u root --password=password --execute="Select * from malSites" dynama')
     elif userChoice == ord('3'):
         curses.endwin()
-        execute_cmd('mysql -u root --password=password --execute="Select * from multipleReturnIPs" dynama')
+        execute_cmd('mysql -u root --password=password --execute="Select * from sketchySources" dynama')
+    elif userChoice == ord('4'):
+        curses.endwin()
+        execute_cmd('mysql -u root --password=password --execute="Select * from threatProb" dynama')
     else:
         pass
 
@@ -139,9 +142,9 @@ def main():
         screen.addstr(2, 2, "Welcome to DynaMA. Please enter a number", curses.A_UNDERLINE)
         screen.addstr(4, 4, "1 - Start packet capture and analysis")
         screen.addstr(5, 4, "2 - Show database tables")
-        screen.addstr(6, 4, "3 - Show previous analysis")
-        screen.addstr(7, 4, "4 - Set analysis time interval")
-        screen.addstr(8, 4, "5 - Exit")
+#        screen.addstr(8, 4, "5 - Show previous analysis")
+        screen.addstr(6, 4, "3 - Set analysis time interval")
+        screen.addstr(7, 4, "4 - Exit")
         screen.refresh()
         try:
             userChoice = screen.getch()
@@ -152,13 +155,13 @@ def main():
                 run_dynama(screen, analysisTimeInterval)
             elif userChoice == ord('2'):
                 show_databases(screen)
+#            elif userChoice == ord('4'):
+ #               show_previous_analysis(screen)
             elif userChoice == ord('3'):
-                show_previous_analysis(screen)
-            elif userChoice == ord('4'):
                 analysisTimeInterval = get_param(screen, "Enter an numeric value:")
         except:
             screen.clear()
-            screen.addst(2, 2, "An unexpcted error has occured.")
+            screen.addstr(2, 2, "An unexpcted error has occured.")
             break
 
 
