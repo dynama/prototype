@@ -8,10 +8,14 @@ import os.path, time, datetime
 workingDir = "/home/dynama/Desktop/prototype/dynamaPROTO" 
 log = os.path.join(workingDir, 'dynamaLog.txt')
 
-#This module focuses on the domain name to see if it is potentially malware.
+#This module focuses on the domain name to see if it is potentially malware. It looks at both the percentage of
+#numbers compared to letters in the domain name, and also looks at the ratio of vowels to consonants.
+#The purpose of this is to find domain names that do not appear to be legit domain names because they are more
+#likely to contain malware.
 
 
-#Percentage of numerical character in domain name.
+#Percentage of numerical character in domain name. This module takes the length of the domain name and takes
+#the number of numbers and letters and finds out the percentage of the domain name that is made up of numbers.
 def percentDomainNum():
 	cnx = get_cnx()
 	data = get_data(cnx, "SELECT DISTINCT sqlID, domain, dst, src FROM dnsPackets")
@@ -52,6 +56,9 @@ def percentDomainNum():
 	cnx.close()
 #percentDomainNum()
 
+#This function looks at the ratio of vowels to consonants.
+#It looks at the total number of letters and finds out how many are vowels divides it by the total number of letters
+#to see the ratio of the vowels to consonants.
 def percentVowels():
 	
 	cnx = get_cnx()
