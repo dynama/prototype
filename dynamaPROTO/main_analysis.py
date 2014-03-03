@@ -40,6 +40,9 @@ class main_analysis(threading.Thread):
 			except:
 				pass
 
+	#This function runs the program through its different phases. It runs through the different modules,
+	#calling forth the traffic to be analyzed and printing what step it is at and when it accomplishes each step.
+	#It does this until it is told to stop analyzing.
 	def run(self):
 		self.commiunicationQueue.put('Running analysis modules every ' + str(self.analysisInterval) + ' seconds...')
 		time.sleep(self.analysisInterval)
@@ -68,12 +71,15 @@ class main_analysis(threading.Thread):
 			truncate_table(cnx, currentDNSTable) 
 			# delete all data once we have analyzed it ## Future work, get this to work when no data is coming in
 			time.sleep(self.analysisInterval)
-
+			
+	#This function closes the thread for the analysis when stopAnalysis is activated.
 	def join(self, timeout=None):
 		self.myDumper.join()
 		self.stopAnalysis.set()
 		super(main_analysis, self).join(timeout)
-
+	
+	#This function calls meta_analysis and finds the sources of analyzed packets that had potential malware
+	#and puts them in mal_hosts.
 	def meta_analysis(self):
 		cnx = get_cnx()
 		analysisTables = [('malSites','high_number_count_in_name','"Yes","No","No","No"'), ('multipleReturnIPs','high_amount_of_ips_per_domain','"No","Yes","No","No"'), ('sketchySources', 'sketchy_src', '"No","No","Yes","No"'),('sketchySourcesByDomain', 'sketchy_browse', '"No","No","No","Yes"')]
@@ -85,7 +91,8 @@ class main_analysis(threading.Thread):
 				sources = []
 			for src in sources:
 				update_mal_hosts(cnx,src[0],tables[1],tables[2])  
-
+	
+	#This function appends entries into mal_hosts into a separate list called entriesList.
 	def check_interface(self): # https://github.com/kernel-sanders/Arsenic/blob/master/arsenic/nmapRunner.py
 		file = os.popen("netstat -nr")
 		data = file.read()
